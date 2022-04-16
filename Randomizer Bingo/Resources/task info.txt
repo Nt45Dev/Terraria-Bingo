@@ -1,0 +1,68 @@
+﻿Different entries will have different values based on their type.
+Examples will be included in each category
+
+Cards can be generated based on certain classes and their items.
+
+Universal:
+
+-prehm: Pre-Hardmode
+-hm: Hardmode
+-crim: Crimson exclusive
+-cor: Corruption Exclusive
+-expert: Expert exlusive drops.
+-easy: Simple to obtain objectives.
+-medium: Objectives which reuire a bit more planning or are a bit rare. Includes non-guaranteed boss drops.
+-hard: Objectives which require further planning and time investment. (Boss trophies, items with decent sized crafting trees, etc.)
+-insane: Objectives which require lots of luck or skill, or anything post-moonlord. (Slime staff, reach projectile limit, and EoL daytime for example)
+-team: Requires multiple players (wormhole potions and pvp)
+-passive: Fills a square until a condition is failed.
+-fail: If a condition can be failed. Inherits -passive. (Will not put 5 failable objectives on a card.)
+-n[min:max]: Generates a number based on a given range. Must be non-negative Example: Obtain Acorn -n[1:40]
+
+Examples: 
+Never use a wormhole potion -passive -team -easy -fail
+Beat king slime with no armor on your first try -prehm -medium -fail
+Obtain The Axe -hm -insane
+Obtain a king slime trophy -prehm -medium
+
+
+
+Items/Objectives:
+If -n is not specified, program will assume it is a non-stackable item or a non-item objective.
+Everything in the itemlist.txt file needs to be in the following format (Spaces are okay. Leave out '-' if it is in the item name): 
+item name -modifiers
+Example: Dirt -n[1:250] -prehm -easy
+
+objectivelist.txt format will be:
+Objective name -modifiers
+Example: Beat skeletron without taking damage -prehm -hard
+
+-armorset (Obtain Gold Armor -armorset -prehm -easy)
+-weapon (Obtain Magic Missile -prehm -easy)
+-melee
+-ranged
+-mage (Obtain Last Prism -hm -insane)
+-summoner
+
+Examples:
+Dirt -n[1:250] -prehm -easy
+Ebonstone -n[500:999] -cor -prehm -medium
+
+
+
+Enemies:
+
+-rare: Anything enemy that can be found with a Lifeform Analyzer
+
+Examples:
+Defeat Wyvern -n[5:15] -medium -hm -rare
+
+
+Bosses:
+
+
+
+NPCs:
+
+
+Events:

@@ -1,0 +1,452 @@
+Angry Bones -prehm -medium -n[1:50] -enemy 
+Anomura Fungus -prehm -medium -n[1:50] -enemy 
+Antlion -prehm -easy -n[1:50] -enemy 
+Antlion Charger -prehm -medium -n[1:50] -enemy 
+Antlion Larva  -prehm -easy -n[1:50] -enemy 
+Antlion Swarmer -prehm -medium -n[1:50] -enemy 
+Baby Slime -prehm -easy -n[1:50] -enemy 
+Bee -prehm -medium -n[1:50] -enemy 
+Black Slime -prehm -medium -n[1:50] -enemy 
+Blood Crawler -prehm -medium -n[1:50] -enemy 
+Blue Jellyfish -prehm -medium -n[1:50] -enemy 
+Blue Slime -prehm -easy -n[1:50] -enemy 
+Bone Serpent -prehm -hard -n[1:50] -enemy 
+Cave Bat -prehm -easy -n[1:50] -enemy 
+Cochineal Beetle  -prehm -hard -rare -n[1:5] -enemy 
+Crab -prehm -easy -n[1:50] -enemy 
+Crimera -prehm -easy -crim -n[1:50] -enemy 
+Cursed Skull -prehm -medium -n[1:50] -enemy 
+Cyan Beetle -prehm -rare -hard -n[1:5] -enemy 
+Dark Caster -prehm -medium -n[1:50] -enemy 
+Demon -prehm -hard -n[1:50] -enemy 
+Demon Eye -prehm -easy -n[1:50] -enemy 
+Devourer  -prehm -medium -cor -n[1:50] -enemy 
+Doctor Bones -prehm -hard -rare -n[1:2] -enemy 
+Doctor Bones -prehm -hard -insane -n[3:5] -enemy 
+Dungeon Guardian -prehm -insane -n[1:1] -enemy 
+Dungeon Slime -prehm -medium -rare -n[1:5] -enemy 
+Eater of Souls -prehm -easy -cor -n[1:50] -enemy 
+Face Monster -prehm -easy -crim -n[1:50] -enemy 
+Fire Imp -prehm -medium -n[1:50] -enemy 
+Frozen Zombie -prehm -easy -n[1:50] -enemy 
+Fungi Bulb -prehm -medium -n[1:50] -enemy 
+Ghost -prehm -easy -n[1:50] -enemy 
+Giant Antlion Charger -prehm -easy -n[1:50] -enemy 
+Giant Antlion Swarmer -prehm -easy -n[1:50] -enemy 
+Giant Worm -prehm -easy -n[1:50] -enemy 
+Gnome -prehm -medium -rare -n[1:5] -enemy 
+Goblin Scout -prehm -medium -rare -n[1:5] -enemy 
+Granite Elemental -prehm -easy -n[1:50] -enemy 
+Granite Golem -prehm -medium -n[1:50] -enemy 
+Green Slime -prehm -easy -n[1:50] -enemy 
+Harpy -prehm -easy -n[1:50] -enemy 
+Hellbat -prehm -hard -n[1:50] -enemy 
+Hoplite -prehm -medium -n[1:50] -enemy 
+Hornet -prehm -medium -n[1:50] -enemy 
+Ice Bat -prehm -easy -n[1:50] -enemy 
+Ice Slime -prehm -easy -n[1:50] -enemy 
+Jungle Bat -prehm -easy -n[1:50] -enemy 
+Jungle Slime -prehm -easy -n[1:50] -enemy 
+Lac Beetle -prehm -hard -rare -n[1:5] -enemy 
+Lava Slime -prehm -hard -n[1:50] -enemy 
+Man Eater -prehm -medium -n[1:50] -enemy 
+Meteor Head -prehm -medium -n[1:50] -enemy 
+Mother Slime -prehm -medium -n[1:50] -enemy 
+Mushi Ladybug -prehm -medium -n[1:50] -enemy 
+Nymph -prehm -hard -rare -n[1:5] -enemy 
+Pinky -prehm -hard -rare -n[1:5] -enemy 
+Pink Jellyfish -prehm -easy -n[1:50] -enemy 
+Piranha -prehm -easy -n[1:50] -enemy 
+Purple Slime -prehm -easy -n[1:50] -enemy 
+Red Slime -prehm -easy -n[1:50] -enemy 
+Sand Slime -prehm -easy -n[1:50] -enemy 
+Sea Snail -prehm -hard -rare -n[1:5] -enemy 
+Shark -prehm -hard -n[1:50] -enemy 
+Skeleton -prehm -medium -n[1:50] -enemy 
+Snatcher -prehm -easy -n[1:50] -enemy 
+Snow Flinx -prehm -easy -n[1:50] -enemy 
+Spiked Ice Slime -prehm -easy -n[1:50] -enemy 
+Spiked Jungle Slime -prehm -easy -n[1:50] -enemy 
+Spore Bat -prehm -easy -n[1:50] -enemy 
+Spore Skeleton -prehm -easy -n[1:50] -enemy 
+Spore Zombie -prehm -easy -n[1:50] -enemy 
+Squid -prehm -hard -rare -n[1:5] -enemy 
+Tim  -prehm -hard -rare -n[1:5] -enemy 
+Tomb Crawler -prehm -easy -n[1:50] -enemy 
+Undead Miner -prehm -hard -rare -n[1:5] -enemy 
+Undead Viking -prehm -medium -n[1:50] -enemy 
+Voodoo Demon -prehm -hard -rare -n[1:5] -enemy 
+Vulture -prehm -easy -n[1:50] -enemy 
+Wall Creeper -prehm -easy -n[1:50] -enemy 
+Yellow Slime -prehm -easy -n[1:50] -enemy 
+Zombie -prehm -easy -n[1:50] -enemy 
+Angler Fish -hm -easy -n[1:50] -enemy 
+Angry Trapper -hm -easy -n[1:50] -enemy 
+Arapaima -hm -easy -n[1:50] -enemy 
+Armored Skeleton -hm -easy -n[1:50] -enemy 
+Armored Viking -hm -easy -n[1:50] -enemy 
+Basilisk -hm -easy -n[1:50] -enemy 
+Black Recluse -hm -medium -n[1:50] -enemy 
+Blood Feeder -hm -easy -crim -n[1:50] -enemy 
+Blood Jelly -hm -crim -easy -n[1:50] -enemy 
+Blood Mummy -hm -medium -crim -n[1:50] -enemy 
+Blue Armored Bones -hm -hard -n[1:50] -enemy 
+Bone Lee -hm -hard -rare -n[1:5] -enemy 
+Chaos Elemental -hm -easy -n[1:50] -enemy 
+Clinger -hm -easy -cor -n[1:50] -enemy 
+Corrupt Mimic -hm -hard -rare -n[1:5] -enemy 
+Cursed Hammer -hm -hard -rare -cor -n[1:5] -enemy 
+Dark Mummy -hm -medium -cor -n[1:50] -enemy 
+Derpling -hm -easy -n[1:50] -enemy 
+Desert Spirit -hm -medium -n[1:50] -enemy 
+Diabolist -hm -hard -n[1:10] -enemy 
+Digger -hm -easy -n[1:50] -enemy 
+Dreamer Ghoul -hm -easy -n[1:50] -enemy 
+Dune Splicer -hm -easy -n[1:50] -enemy 
+Dungeon Spirit -hm -hard -n[1:50] -enemy 
+Enchanted Sword  -hm -hard -n[1:5] -enemy 
+Floaty Gross -hm -easy -crim -n[1:50] -enemy 
+Flying Snake -hm -hard -n[1:50] -enemy 
+Fungo Fish -hm -easy -n[1:50] -enemy 
+Gastropod -hm -easy -n[1:50] -enemy 
+Ghoul -hm -easy -n[1:50] -enemy 
+Giant Bat -hm -easy -n[1:50] -enemy 
+Giant Cursed Skull -hm -hard -n[1:50] -enemy 
+Giant Flying Fox -hm -easy -n[1:50] -enemy 
+Giant Fungi Bulb -hm -easy -n[1:50] -enemy 
+Giant Tortoise -hm -medium -n[1:50] -enemy 
+Green Jellyfish -hm -easy -n[1:50] -enemy 
+Hallowed Mimic -hm -hard -rare -n[1:5] -enemy 
+Hell Armored Bones -hm -hard -n[1:50] -enemy 
+Herpling -hm -easy -crim -n[1:50] -enemy 
+Ice Elemental -hm -easy -n[1:50] -enemy 
+Ice Mimic -hm -medium -rare -n[1:5] -enemy 
+Ice Tortoise -hm -easy -n[1:50] -enemy 
+Ichor Sticker -hm -easy -n[1:50] -enemy 
+Icy Merman -hm -easy -n[1:50] -enemy 
+Illuminant Bat -hm -easy -n[1:50] -enemy 
+Illuminant Slime -hm -easy -n[1:50] -enemy 
+Jungle Creeper -hm -easy -n[1:50] -enemy 
+Lamia -hm -easy -n[1:50] -enemy 
+Lava Bat -hm -easy -n[1:50] -enemy 
+Light Mummy -hm -easy -n[1:50] -enemy 
+Lizahrd -hm -hard -n[1:50] -enemy 
+Martian Probe -hm -hard -rare -n[1:5] -enemy 
+Medusa -hm -hard -rare -n[1:5] -enemy 
+Mimic -hm -hard -rare -n[1:5] -enemy 
+Moss Hornet -hm -easy -n[1:50] -enemy 
+Moth -hm -hard -rare -n[1:5] -enemy 
+Mummy -hm -easy -n[1:50] -enemy 
+Necromancer -hm -hard -n[1:50] -enemy 
+Paladin -hm -hard -rare -n[1:5] -enemy 
+Pigron -hm -medium -n[1:10] -enemy 
+Pixie -hm -easy -n[1:50] -enemy 
+Possessed Armor -hm -easy -n[1:50] -enemy 
+Ragged Caster -hm -hard -n[1:10] -enemy 
+Red Devil -hm -medium -n[1:50] -enemy 
+Rock Golem -hm -easy -n[1:50] -enemy 
+Rune Wizard -hm -hard -rare -n[1:5] -enemy 
+Rusty Armored Bones -hm -hard -n[1:50] -enemy 
+Sand Poacher -hm -easy -n[1:50] -enemy 
+Skeleton Archer -hm -easy -n[1:50] -enemy 
+Skeleton Commando -hm -hard -rare -n[1:5] -enemy 
+Skeleton Sniper -hm -hard -rare -n[1:5] -enemy 
+Slimeling -hm -easy -cor -n[1:50] -enemy 
+Slimer -hm -easy -cor -n[1:50] -enemy 
+Tactical Skeleton -hm -hard -rare -n[1:5] -enemy 
+Tainted Ghoul -hm -easy -crim -n[1:50] -enemy 
+Tortured Soul -hm -hard -rare -fail -n[1:5] -enemy 
+Toxic Sludge -hm -easy -n[1:50] -enemy 
+Unicorn -hm -easy -n[1:50] -enemy 
+Vile Ghoul -hm -easy -cor -n[1:50] -enemy 
+Wandering Eye -hm -easy -n[1:50] -enemy 
+Werewolf -hm -medium -n[1:50] -enemy 
+Wolf -hm -easy -n[1:50] -enemy 
+World Feeder -hm -easy -cor -n[1:50] -enemy 
+Wraith -hm -easy -n[1:50] -enemy 
+Wyvern -hm -medium -rare -n[1:10] -enemy 
+Copper Shortsword -prehm -easy -item -melee -n[1:1]
+Tin Shortsword -prehm -easy -item -melee -n[1:1]
+Wooden Sword -prehm -easy -item -melee -n[1:1]
+Boreal Wood Sword -prehm -easy -item -melee -n[1:1]
+Copper Broadsword -prehm -easy -item -melee -n[1:1]
+Iron Shortsword -prehm -easy -item -melee -n[1:1]
+Palm Wood Sword -prehm -easy -item -melee -n[1:1]
+Rich Mahogany Sword -prehm -easy -item -melee -n[1:1]
+Cactus Sword -prehm -easy -item -melee -n[1:1]
+Lead Shortsword -prehm -easy -item -melee -n[1:1]
+Silver Shortsword -prehm -easy -item -melee -n[1:1]
+Tin Broadsword -prehm -easy -item -melee -n[1:1]
+Ebonwood Sword -prehm -easy -item -melee -cor -n[1:1]
+Iron Broadsword -prehm -easy -item -melee -n[1:1]
+Shadewood Sword -prehm -easy -item -melee -crim -n[1:1]
+Tungsten Shortsword -prehm -easy -item -melee -n[1:1]
+Gold Shortsword -prehm -easy -item -melee -n[1:1]
+Lead Broadsword -prehm -easy -item -melee -n[1:1]
+Silver Broadsword -prehm -easy -item -melee -n[1:1]
+Tungsten Broadsword -prehm -easy -item -melee -n[1:1]
+Zombie Arm -prehm -hard -item -melee -n[1:1]
+Gold Broadsword -prehm -easy -item -melee -n[1:1]
+Platinum Shortsword -prehm -easy -item -melee -n[1:1]
+Mandible Blade -prehm -medium -item -melee -n[1:1]
+Stylish Scissors -prehm -hard -item -melee -n[1:1]
+Ruler -prehm -medium -item -melee -n[1:1]
+Platinum Broadsword -prehm -easy -item -melee -n[1:1]
+Umbrella  -prehm -easy -item -melee -n[1:1]
+Breathing Reed -prehm -easy -item -melee -n[1:1]
+Gladius -prehm -medium -item -melee -n[1:1]
+Bone Sword -prehm -hard -item -melee -n[1:1]
+Bat Bat -prehm -insane -item -melee -n[1:1]
+Tentacle Spike -prehm -insane -item -melee -n[1:1]
+Katana -prehm -medium -item -melee -n[1:1]
+Ice Blade -prehm -easy -item -melee -n[1:1]
+Lights Bane -prehm -easy -item -melee -cor -n[1:1]
+Tragic Umbrella -prehm -medium -item -melee -n[1:1]
+Muramasa -prehm -hard -item -melee -n[1:1]
+Exotic Scimitar -prehm -hard -item -melee -n[1:1]
+Phaseblade -prehm -medium -item -melee -n[1:1]
+Blood Butcherer -prehm -easy -item -melee -crim -n[1:1]
+Starfury -prehm -easy -item -melee -n[1:1]
+Enchanted Sword -prehm -medium -item -melee -n[1:1]
+Purple Clubberfish -prehm -hard -item -melee -cor -n[1:1]
+Bee Keeper -prehm -medium -item -melee -n[1:1]
+Falcon Blade -prehm -hard -item -melee -n[1:1]
+Blade of Grass -prehm -medium -item -melee -n[1:1]
+Fiery Greatsword -prehm -hard -item -melee -n[1:1]
+Night's Edge -prehm -hard -item -melee -n[1:1]
+
+
+
+Pearlwood Sword -hm -easy -item -melee -n[1:1]
+Classy Cane -hm -hard -item -melee -n[1:1]
+Slap Hand -hm -hard -item -melee -n[1:1]
+Cobalt/Palladium Sword -hm -easy -item -melee -n[1:1]
+Phasesaber -hm -medium -item -melee -n[1:1]
+Ice Sickle -hm -medium -item -melee -n[1:1]
+Brand of the Inferno -hm -hard -item -melee -n[1:1]
+Mythril/Orichalcum Sword -hm -easy -item -melee -n[1:1]
+Breaker Blade -hm -easy -item -melee -n[1:1]
+Cutlass -hm -easy -item -melee -n[1:1]
+Frostbrand -hm -medium -item -melee -n[1:1]
+Adamantite/Titanium Sword -hm -medium -item -melee -n[1:1]
+Beam Sword -hm -hard -item -melee -n[1:1]
+Fetid Baghnakhs -hm -medium -item -melee -n[1:1]
+Bladetongue -hm -medium -item -melee -n[1:1]
+Ham Bat -hm -medium -item -melee -n[1:1]
+Excalibur -hm -medium -item -melee -n[1:1]
+True Excalibur -hm -hard -item -melee -n[1:1]
+Chlorophyte Saber -hm -hard -item -melee -n[1:1]
+Death Sickle -hm -hard -item -melee -n[1:1]
+Psycho Knife -hm -hard -item -melee -n[1:1]
+Keybrand -hm -insane -item -melee -n[1:1]
+Chlorophyte Claymore -hm -hard -item -melee -n[1:1]
+The Horseman's Blade -hm -hard -item -melee -n[1:1]
+Christmas Tree Sword -hm -hard -item -melee -n[1:1]
+True Night's Edge -hm -hard -item -melee -n[1:1]
+Seedler -hm -hard -item -melee -n[1:1]
+Flying Dragon -hm -insane -item -melee -n[1:1]
+Starlight -hm -hard -item -melee -n[1:1]
+Terra Blade -hm -insane -item -melee -n[1:1]
+Influx Waver -hm -insane -item -melee -n[1:1]
+Star Wrath -hm -insane -item -melee -n[1:1]
+Meowmere -hm -insane -item -melee -n[1:1]
+Wooden Yoyo -prehm -easy -item -melee -n[1:1]
+Rally -prehm -medium -item -melee -n[1:1]
+Malaise -prehm -easy -item -melee -cor -n[1:1]
+Artery -prehm -easy -item -melee -crim -n[1:1]
+Amazon -prehm -medium -item -melee -n[1:1]
+Code 1 -prehm -medium -item -melee -n[1:1]
+Valor -prehm -hard -item -melee -n[1:1]
+
+
+Format C -hm -easy -item -melee -n[1:1]
+Gradient -hm -easy -item -melee -n[1:1]
+Chik -hm -easy -item -melee -n[1:1]
+Hel-Fire -hm -easy -item -melee -n[1:1]
+Amarok -hm -easy -item -melee -n[1:1]
+Code 2 -hm -medium -item -melee -n[1:1]
+Yelets -hm -medium -item -melee -n[1:1]
+Red's Throw -hm -insane -item -melee -n[1:1]
+Valkyrie Yoyo -hm -insane -item -melee -n[1:1]
+Kraken -hm -hard -item -melee -n[1:1]
+The Eye of Cthulhu -hm -hard -item -melee -n[1:1]
+Terrarian -hm -insane -item -melee -n[1:1]
+
+Spear -prehm -easy -item -melee -n[1:1]
+Trident -prehm -easy -item -melee -n[1:1]
+Storm Spear -prehm -easy -item -melee -n[1:1]
+The Rotted Fork -prehm -easy -item -melee -crim -n[1:1]
+Swordfish -prehm -medium -item -melee -n[1:1]
+Dark Lance -prehm -hard -item -melee -n[1:1]
+
+Cobalt Naginata/Palladium Pike -hm -easy -item -melee -n[1:1]
+Mythril Halberd/Orichalcum Halberd -hm -easy -item -melee -n[1:1]
+Adamantite Glaive/Titanium Trident -hm -easy -item -melee -n[1:1]
+Gungnir -hm -medium -item -melee -n[1:1]
+Ghastly Glaive -hm -medium -item -melee -n[1:1]
+Chlorophyte Partisan -hm -medium -item -melee -n[1:1]
+Mushroom Spear -hm -medium -item -melee -n[1:1]
+Obsidian Swordfish -hm -hard -item -melee -n[1:1]
+North Pole -hm -hard -item -melee -n[1:1]
+
+Wooden Boomerang -prehm -easy -item -melee -n[1:1]
+Enchanted Boomerang -prehm -easy -item -melee -n[1:1]
+Shroomerang -prehm -medium -item -melee -n[1:1]
+Ice Boomerang -prehm -easy -item -melee -n[1:1]
+Thorn Chakram -prehm -easy -item -melee -n[1:1]
+Combat Wrench -prehm -hard -item -melee -n[1:1]
+Flamarang -prehm -hard -item -melee -n[1:1]
+
+Flying Knife -hm -medium -item -melee -n[1:1]
+Sergeant United Shield -hm -hard -item -melee -n[1:1]
+Light Disc -hm -medium -item -melee -n[1:5]
+Bananarang -hm -easy -item -melee -n[1:1]
+Possessed Hatchet -hm -hard -item -melee -n[1:1]
+Paladin's Hammer -hm -hard -item -melee -n[1:1]
+
+Chain Knife -prehm -medium -item -melee -n[1:1]
+Mace -prehm -easy -item -melee -n[1:1]
+Flaming Mace -prehm -easy -item -melee -n[1:1]
+Ball O' Hurt -prehm -easy -item -melee -cor -n[1:1]
+The Meatball -prehm -easy -item -melee -crim -n[1:1]
+Blue Moon -prehm -medium -item -melee -n[1:1]
+Sunfury -prehm -hard -item -melee -n[1:1]
+
+Anchor -hm -medium -item -melee -n[1:1]
+KO Cannon -hm -hard -item -melee -n[1:1]
+Drippler Crippler -hm -hard -item -melee -n[1:1]
+Chain Guillotines -hm -medium -item -melee -cor -n[1:1]
+Dao of Pow -hm -easy -item -melee -n[1:1]
+Flower Pow -hm -hard -item -melee -n[1:1]
+Golem Fist -hm -hard -item -melee -n[1:1]
+Flairon -hm -hard -item -melee -n[1:1]
+
+Terragrim -prehm -insane -item -melee -n[1:1]
+
+Arkhalis -hm -insane -item -melee -n[1:1]
+Jousting Lance -hm -easy -item -melee -n[1:1]
+Shadowflame Knife -hm -medium -item -melee -n[1:1]
+Hallowed Jousting Lance -hm -medium -item -melee -n[1:1]
+Sleepy Octopod -hm -medium -item -melee -n[1:1]
+Scourge of the Corruptor -hm -insane -item -melee -cor -n[1:1]
+Shadow Jousting Lance -hm -hard -item -melee -n[1:1]
+Vampire Knives -hm -insane -item -melee -crim -n[1:1]
+Sky Dragon's Fury -hm -insane -item -melee -n[1:1]
+Daybreak -hm -insane -item -melee -n[1:1]
+Solar Eruption -hm -insane -item -melee -n[1:1]
+Zenith -hm -insane -item -melee -n[1:1]
+
+Wooden Bow -prehm -easy -item -ranged -n[1:1]
+Boreal Wood Bow -prehm -easy -item -ranged -n[1:1]
+Copper Bow -prehm -easy -item -ranged -n[1:1]
+Palm Wood Bow -prehm -easy -item -ranged -n[1:1]
+Rich Mahogany Bow -prehm -easy -item -ranged -n[1:1]
+Tin Bow -prehm -easy -item -ranged -n[1:1]
+Ebonwood Bow -prehm -easy -item -ranged -cor -n[1:1]
+Iron Bow -prehm -easy -item -ranged -n[1:1]
+Shadewood Bow -prehm -easy -item -ranged -crim -n[1:1]
+Lead Bow -prehm -easy -item -ranged -n[1:1]
+Silver Bow -prehm -easy -item -ranged -n[1:1]
+Tungsten Bow -prehm -easy -item -ranged -n[1:1]
+Gold/Platinum Bow -prehm -easy -item -ranged -n[1:1]
+Demon Bow -prehm -easy -item -ranged -cor -n[1:1]
+Tendon Bow -prehm -easy -item -ranged -crim -n[1:1]
+Blood Rain Bow -prehm -hard -item -ranged -n[1:1]
+The Bee's Knees -prehm -medium -item -ranged -n[1:1]
+Hellwing Bow -prehm -hard -item -ranged -n[1:1]
+Molten Fury -prehm -hard -item -ranged -n[1:1]
+
+Pearlwood Bow -hm -easy -item -ranged -n[1:1]
+Marrow -hm -medium -item -ranged -n[1:1]
+Ice Bow -hm -medium -item -ranged -n[1:1]
+Daedalus Stormbow -hm -medium -item -ranged -n[1:1]
+Shadowflame Bow -hm -easy -item -ranged -n[1:1]
+Phantom Phoenix -hm -medium -item -ranged -n[1:1]
+Pulse Bow -hm -medium -item -ranged -n[1:1]
+Aerial Bane -hm -hard -item -ranged -n[1:1]
+Tsunami -hm -hard -item -ranged -n[1:1]
+Eventide -hm -insane -item -ranged -n[1:1]
+Phantasm -hm -insane -item -ranged -n[1:1]
+
+Cobalt/Palladium Repeater -hm -easy -item -ranged -n[1:1]
+Mythril/Orichalcum Repeater -hm -easy -item -ranged -n[1:1]
+Adamantite/Titanium Repeater -hm -easy -item -ranged -n[1:1]
+Hallowed Repeater -hm -medium -item -ranged -n[1:1]
+Chlorophyte Shotbow -hm -medium -item -ranged -n[1:1]
+Stake Launcher -hm -hard -item -ranged -n[1:1]
+
+Flintlock Pistol -prehm -easy -item -ranged -n[1:1]
+Musket -prehm -easy -item -ranged -cor -n[1:1]
+The Undertaker -prehm -easy -item -ranged -crim -n[1:1]
+Sandgun -prehm -medium -item -ranged -n[1:1]
+Revolver -prehm -easy -item -ranged -n[1:1]
+Minishark -prehm -easy -item -ranged -n[1:1]
+Boomstick -prehm -easy -item -ranged -n[1:1]
+Quad-Barrel Shotgun -prehm -medium -item -ranged -n[1:1]
+Handgun -prehm -medium -item -ranged -n[1:1]
+Phoenix Blaster -prehm -hard -item -ranged -n[1:1]
+Pew-matic Horn -prehm -medium -item -ranged -n[1:1]
+
+Clockwork Assault Rifle -hm -easy -item -ranged -n[1:1]
+Gatligator -hm -medium -item -ranged -n[1:1]
+Shotgun -hm -easy -item -ranged -n[1:1]
+Onyx Blaster -hm -medium -item -ranged -n[1:1]
+Coin Gun -hm -insane -item -ranged -n[1:1]
+Uzi -hm -medium -item -ranged -n[1:1]
+Megashark -hm -medium -item -ranged -n[1:1]
+Venus Magnum -hm -hard -item -ranged -n[1:1]
+Tactical Shotgun -hm -hard -item -ranged -n[1:1]
+Sniper Rifle -hm -hard -item -ranged -n[1:1]
+Candy Corn Rifle -hm -hard -item -ranged -n[1:1]
+Chain Gun -hm -hard -item -ranged -n[1:1]
+Xenopopper -hm -hard -item -ranged -n[1:1]
+Vortex Beater -hm -insane -item -ranged -n[1:1]
+S.D.M.G. -hm -insane -item -ranged -n[1:1]
+
+Grenade Launcher -hm -hard -item -ranged -n[1:1]
+Proximity Mine Launcher -hm -easy -item -ranged -n[1:1]
+Rocket Launcher -hm -insane -item -ranged -n[1:1]
+Nail Gun -hm -hard -item -ranged -n[1:1]
+Stynger -hm -hard -item -ranged -n[1:1]
+Jack 'O Lantern Launcher -hm -hard -item -ranged -n[1:1]
+Snowman Cannon -hm -hard -item -ranged -n[1:1]
+Celebration -hm -hard -item -ranged -n[1:1]
+Electrosphere Launcher -hm -hard -item -ranged -n[1:1]
+Celebration Mk2 -hm -insane  -item -ranged -n[1:1]
+
+Paper Airplane -prehm -easy -item -ranged -n[1:5]
+White Paper Airplane -prehm -easy -item -ranged -n[1:5]
+Shuriken -prehm -easy -item -ranged -n[1:999]
+Throwing Knife -prehm -easy -item -ranged -n[1:500]
+Poisoned Knife -prehm -easy -item -ranged -n[1:500]
+Snowball -prehm -easy -item -ranged -n[999:3996]
+Ale Tosser -prehm -medium -item -ranged -n[1:1]
+Spiky Ball -prehm -easy -item -ranged -n[1:100]
+Bone -prehm -medium -item -n[1:100]
+Molotov Cocktail -prehm -medium -item -ranged -n[1:50]
+Frost Daggerfish -prehm -easy -item -ranged -n[1:200]
+Javelin -prehm -medium -item -ranged -n[1:500]
+Bone Javelin -prehm -easy -item -ranged -n[1:200]
+Bone Throwing Knife -prehm -easy -item -ranged -n[1:300]
+
+Grenade -prehm -easy -item -ranged -n[1:100]
+Sticky Grenade -prehm -easy -item -ranged -n[1:100]
+Bouncy Grenade -prehm -easy -item -ranged -n[1:20]
+Beenade -prehm -medium -item -ranged -n[1:50]
+Happy Grenade -prehm -medium -item -ranged -n[1:100]
+
+Flare Gun -prehm -easy -item -ranged -n[1:1]
+Blowpipe -prehm -easy -item -ranged -n[1:1]
+Blowgun -prehm -medium -item -ranged -n[1:1]
+Snowball Cannon -prehm -easy -item -ranged -n[1:1]
+Paintball Gun -prehm -medium -item -ranged -n[1:1]
+Harpoon -prehm -easy -item -ranged -n[1:1]
+Star Cannon -prehm -medium -item -ranged -n[1:1]
+
+Toxikarp -hm -medium -item -ranged -n[1:1]
+Dart Pistol -hm -medium -item -ranged -crim -n[1:1]
+Dart Rifle -hm -medium -item -ranged -cor -n[1:1]
+Flamethrower -hm -medium -item -ranged -n[1:1]
+Piranha Gun -hm -insane -item -ranged -n[1:1]
+Elf Melter -hm -hard -item -ranged -n[1:1]
+Super Star Shooter -hm -medium -item -ranged -n[1:1]

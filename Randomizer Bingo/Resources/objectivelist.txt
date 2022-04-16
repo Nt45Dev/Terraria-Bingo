@@ -1,0 +1,30 @@
+﻿Obtain Item. -prehm -easy -item
+Obtain Item. -prehm -medium -item
+Obtain Item. -prehm -hard -item
+Obtain Item. -prehm -insane -item
+
+Obtain Item. -hm -easy -item
+Obtain Item. -hm -medium -item
+Obtain Item. -hm -hard -item
+Obtain Item. -hm -insane -item
+
+Defeat Boss. -prehm -easy -boss
+Defeat Boss. -prehm -medium -boss
+Defeat Boss. -prehm -hm -boss
+Defeat Boss without taking damage. -prehm -insane -boss
+
+Defeat Boss. -hm -easy -boss
+Defeat Boss. -hm -medium -boss
+Defeat Boss. -hm -hm -boss
+Defeat Boss without taking damage. -hm -insane -boss
+Defeat Boss for the first time without dying. (Failable) -prehm -hard -fail -boss
+Defeat Boss for the first time without dying. (Failable) -hm -insane -fail -boss
+
+Invite the NPC to your community. -prehm -easy -npc
+Invite the NPC to your community. -prehm -medium -npc
+Invite the NPC to your community. -prehm -hard -npc
+Invite the NPC to your community. -hm -easy -npc
+Invite the NPC to your community. -hm -medium -npc
+Invite the NPC to your community. -hm -hard -npc
+
+

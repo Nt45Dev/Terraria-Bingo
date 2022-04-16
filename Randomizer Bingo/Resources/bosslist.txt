@@ -1,0 +1,35 @@
+﻿King Slime -prehm -easy
+Eye of Cthulhu -prehm -easy
+Eater of Worlds -prehm -easy -cor
+Brain of Cthulhu -prehm -easy -crim
+Queen Bee -prehm -medium
+Skeletron -prehm -medium
+Deerclops -prehm -medium
+Wall of Flesh -prehm -hard
+
+Queen Slime -hm -easy
+The Twins -hm -medium
+The Destroyer -hm -medium
+Skeletron Prime -hm -medium
+Plantera -hm -hard
+Golem -hm -hard
+Duke Fishron -hm -hard
+Empress of Light -hm -hard
+Lunatic Cultist -hm -hard
+Moon Lord -hm -insane
+
+Dark Mage -prehm -medium
+Ogre -hm -medium
+Betsy -hm -hard
+Flying Dutchman -hm -easy
+Mourning Wood -hm -hard
+Pumpking -hm -hard
+Everscream -hm -hard
+Santa-NK1 -hm -hard
+Ice Queen -hm -hard
+Martian Saucer -hm -hard
+Solar Pillar -hm -hard
+Nebula Pillar -hm -hard
+Vortex Pillar -hm -hard
+Stardust Pillar -hm -hard
+

@@ -1,0 +1,9 @@
+﻿Party -prehm -medium -event
+Goblin Army -prehm -medium -event
+Blood Moon -prehm -medium -event
+Solar Eclipse -hm -medium -event
+Pirate Invasion -hm -easy -event
+Pumpkin Moon (Reach Wave 15) -hm -insane -event
+Frost Moon (Reach Wave 15+) -hm -insane -event
+Martian Madness -hm -hard -event
+Celestial Pillars -hm -insane -event

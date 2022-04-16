@@ -1,0 +1,167 @@
+Angry Bones -prehm -medium -n[1:50] -enemy 
+Anomura Fungus -prehm -medium -n[1:50] -enemy 
+Antlion -prehm -easy -n[1:50] -enemy 
+Antlion Charger -prehm -medium -n[1:50] -enemy 
+Antlion Larva  -prehm -easy -n[1:50] -enemy 
+Antlion Swarmer -prehm -medium -n[1:50] -enemy 
+Baby Slime -prehm -easy -n[1:50] -enemy 
+Bee -prehm -medium -n[1:50] -enemy 
+Black Slime -prehm -medium -n[1:50] -enemy 
+Blood Crawler -prehm -medium -n[1:50] -enemy 
+Blue Jellyfish -prehm -medium -n[1:50] -enemy 
+Blue Slime -prehm -easy -n[1:50] -enemy 
+Bone Serpent -prehm -hard -n[1:50] -enemy 
+Cave Bat -prehm -easy -n[1:50] -enemy 
+Cochineal Beetle  -prehm -hard -rare -n[1:5] -enemy 
+Crab -prehm -easy -n[1:50] -enemy 
+Crimera -prehm -easy -crim -n[1:50] -enemy 
+Cursed Skull -prehm -medium -n[1:50] -enemy 
+Cyan Beetle -prehm -rare -hard -n[1:5] -enemy 
+Dark Caster -prehm -medium -n[1:50] -enemy 
+Demon -prehm -hard -n[1:50] -enemy 
+Demon Eye -prehm -easy -n[1:50] -enemy 
+Devourer  -prehm -medium -cor -n[1:50] -enemy 
+Doctor Bones -prehm -hard -rare -n[1:2] -enemy 
+Doctor Bones -prehm -hard -insane -n[3:5] -enemy 
+Dungeon Guardian -prehm -insane -n[1:1] -enemy 
+Dungeon Slime -prehm -medium -rare -n[1:5] -enemy 
+Eater of Souls -prehm -easy -cor -n[1:50] -enemy 
+Face Monster -prehm -easy -crim -n[1:50] -enemy 
+Fire Imp -prehm -medium -n[1:50] -enemy 
+Frozen Zombie -prehm -easy -n[1:50] -enemy 
+Fungi Bulb -prehm -medium -n[1:50] -enemy 
+Ghost -prehm -easy -n[1:50] -enemy 
+Giant Antlion Charger -prehm -easy -n[1:50] -enemy 
+Giant Antlion Swarmer -prehm -easy -n[1:50] -enemy 
+Giant Worm -prehm -easy -n[1:50] -enemy 
+Gnome -prehm -medium -rare -n[1:5] -enemy 
+Goblin Scout -prehm -medium -rare -n[1:5] -enemy 
+Granite Elemental -prehm -easy -n[1:50] -enemy 
+Granite Golem -prehm -medium -n[1:50] -enemy 
+Green Slime -prehm -easy -n[1:50] -enemy 
+Harpy -prehm -easy -n[1:50] -enemy 
+Hellbat -prehm -hard -n[1:50] -enemy 
+Hoplite -prehm -medium -n[1:50] -enemy 
+Hornet -prehm -medium -n[1:50] -enemy 
+Ice Bat -prehm -easy -n[1:50] -enemy 
+Ice Slime -prehm -easy -n[1:50] -enemy 
+Jungle Bat -prehm -easy -n[1:50] -enemy 
+Jungle Slime -prehm -easy -n[1:50] -enemy 
+Lac Beetle -prehm -hard -rare -n[1:5] -enemy 
+Lava Slime -prehm -hard -n[1:50] -enemy 
+Man Eater -prehm -medium -n[1:50] -enemy 
+Meteor Head -prehm -medium -n[1:50] -enemy 
+Mother Slime -prehm -medium -n[1:50] -enemy 
+Mushi Ladybug -prehm -medium -n[1:50] -enemy 
+Nymph -prehm -hard -rare -n[1:5] -enemy 
+Pinky -prehm -hard -rare -n[1:5] -enemy 
+Pink Jellyfish -prehm -easy -n[1:50] -enemy 
+Piranha -prehm -easy -n[1:50] -enemy 
+Purple Slime -prehm -easy -n[1:50] -enemy 
+Red Slime -prehm -easy -n[1:50] -enemy 
+Sand Slime -prehm -easy -n[1:50] -enemy 
+Sea Snail -prehm -hard -rare -n[1:5] -enemy 
+Shark -prehm -hard -n[1:50] -enemy 
+Skeleton -prehm -medium -n[1:50] -enemy 
+Snatcher -prehm -easy -n[1:50] -enemy 
+Snow Flinx -prehm -easy -n[1:50] -enemy 
+Spiked Ice Slime -prehm -easy -n[1:50] -enemy 
+Spiked Jungle Slime -prehm -easy -n[1:50] -enemy 
+Spore Bat -prehm -easy -n[1:50] -enemy 
+Spore Skeleton -prehm -easy -n[1:50] -enemy 
+Spore Zombie -prehm -easy -n[1:50] -enemy 
+Squid -prehm -hard -rare -n[1:5] -enemy 
+Tim  -prehm -hard -rare -n[1:5] -enemy 
+Tomb Crawler -prehm -easy -n[1:50] -enemy 
+Undead Miner -prehm -hard -rare -n[1:5] -enemy 
+Undead Viking -prehm -medium -n[1:50] -enemy 
+Voodoo Demon -prehm -hard -rare -n[1:5] -enemy 
+Vulture -prehm -easy -n[1:50] -enemy 
+Wall Creeper -prehm -easy -n[1:50] -enemy 
+Yellow Slime -prehm -easy -n[1:50] -enemy 
+Zombie -prehm -easy -n[1:50] -enemy 
+Angler Fish -hm -easy -n[1:50] -enemy 
+Angry Trapper -hm -easy -n[1:50] -enemy 
+Arapaima -hm -easy -n[1:50] -enemy 
+Armored Skeleton -hm -easy -n[1:50] -enemy 
+Armored Viking -hm -easy -n[1:50] -enemy 
+Basilisk -hm -easy -n[1:50] -enemy 
+Black Recluse -hm -medium -n[1:50] -enemy 
+Blood Feeder -hm -easy -crim -n[1:50] -enemy 
+Blood Jelly -hm -crim -easy -n[1:50] -enemy 
+Blood Mummy -hm -medium -crim -n[1:50] -enemy 
+Blue Armored Bones -hm -hard -n[1:50] -enemy 
+Bone Lee -hm -hard -rare -n[1:5] -enemy 
+Chaos Elemental -hm -easy -n[1:50] -enemy 
+Clinger -hm -easy -cor -n[1:50] -enemy 
+Corrupt Mimic -hm -hard -rare -n[1:5] -enemy 
+Cursed Hammer -hm -hard -rare -cor -n[1:5] -enemy 
+Dark Mummy -hm -medium -cor -n[1:50] -enemy 
+Derpling -hm -easy -n[1:50] -enemy 
+Desert Spirit -hm -medium -n[1:50] -enemy 
+Diabolist -hm -hard -n[1:10] -enemy 
+Digger -hm -easy -n[1:50] -enemy 
+Dreamer Ghoul -hm -easy -n[1:50] -enemy 
+Dune Splicer -hm -easy -n[1:50] -enemy 
+Dungeon Spirit -hm -hard -n[1:50] -enemy 
+Enchanted Sword  -hm -hard -n[1:5] -enemy 
+Floaty Gross -hm -easy -crim -n[1:50] -enemy 
+Flying Snake -hm -hard -n[1:50] -enemy 
+Fungo Fish -hm -easy -n[1:50] -enemy 
+Gastropod -hm -easy -n[1:50] -enemy 
+Ghoul -hm -easy -n[1:50] -enemy 
+Giant Bat -hm -easy -n[1:50] -enemy 
+Giant Cursed Skull -hm -hard -n[1:50] -enemy 
+Giant Flying Fox -hm -easy -n[1:50] -enemy 
+Giant Fungi Bulb -hm -easy -n[1:50] -enemy 
+Giant Tortoise -hm -medium -n[1:50] -enemy 
+Green Jellyfish -hm -easy -n[1:50] -enemy 
+Hallowed Mimic -hm -hard -rare -n[1:5] -enemy 
+Hell Armored Bones -hm -hard -n[1:50] -enemy 
+Herpling -hm -easy -crim -n[1:50] -enemy 
+Ice Elemental -hm -easy -n[1:50] -enemy 
+Ice Mimic -hm -medium -rare -n[1:5] -enemy 
+Ice Tortoise -hm -easy -n[1:50] -enemy 
+Ichor Sticker -hm -easy -n[1:50] -enemy 
+Icy Merman -hm -easy -n[1:50] -enemy 
+Illuminant Bat -hm -easy -n[1:50] -enemy 
+Illuminant Slime -hm -easy -n[1:50] -enemy 
+Jungle Creeper -hm -easy -n[1:50] -enemy 
+Lamia -hm -easy -n[1:50] -enemy 
+Lava Bat -hm -easy -n[1:50] -enemy 
+Light Mummy -hm -easy -n[1:50] -enemy 
+Lizahrd -hm -hard -n[1:50] -enemy 
+Martian Probe -hm -hard -rare -n[1:5] -enemy 
+Medusa -hm -hard -rare -n[1:5] -enemy 
+Mimic -hm -hard -rare -n[1:5] -enemy 
+Moss Hornet -hm -easy -n[1:50] -enemy 
+Moth -hm -hard -rare -n[1:5] -enemy 
+Mummy -hm -easy -n[1:50] -enemy 
+Necromancer -hm -hard -n[1:50] -enemy 
+Paladin -hm -hard -rare -n[1:5] -enemy 
+Pigron -hm -medium -n[1:10] -enemy 
+Pixie -hm -easy -n[1:50] -enemy 
+Possessed Armor -hm -easy -n[1:50] -enemy 
+Ragged Caster -hm -hard -n[1:10] -enemy 
+Red Devil -hm -medium -n[1:50] -enemy 
+Rock Golem -hm -easy -n[1:50] -enemy 
+Rune Wizard -hm -hard -rare -n[1:5] -enemy 
+Rusty Armored Bones -hm -hard -n[1:50] -enemy 
+Sand Poacher -hm -easy -n[1:50] -enemy 
+Skeleton Archer -hm -easy -n[1:50] -enemy 
+Skeleton Commando -hm -hard -rare -n[1:5] -enemy 
+Skeleton Sniper -hm -hard -rare -n[1:5] -enemy 
+Slimeling -hm -easy -cor -n[1:50] -enemy 
+Slimer -hm -easy -cor -n[1:50] -enemy 
+Tactical Skeleton -hm -hard -rare -n[1:5] -enemy 
+Tainted Ghoul -hm -easy -crim -n[1:50] -enemy 
+Tortured Soul -hm -hard -rare -fail -n[1:5] -enemy 
+Toxic Sludge -hm -easy -n[1:50] -enemy 
+Unicorn -hm -easy -n[1:50] -enemy 
+Vile Ghoul -hm -easy -cor -n[1:50] -enemy 
+Wandering Eye -hm -easy -n[1:50] -enemy 
+Werewolf -hm -medium -n[1:50] -enemy 
+Wolf -hm -easy -n[1:50] -enemy 
+World Feeder -hm -easy -cor -n[1:50] -enemy 
+Wraith -hm -easy -n[1:50] -enemy 
+Wyvern -hm -medium -rare -n[1:10] -enemy 

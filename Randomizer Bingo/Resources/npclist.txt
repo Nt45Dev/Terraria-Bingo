@@ -1,0 +1,28 @@
+﻿Guide -prehm -easy
+Merchant -prehm -easy
+Nurse -prehm -easy
+Painter -prehm -easy
+Dye Trader -prehm -medium
+Zoologist -prehm -easy
+Golfer -prehm -easy
+Party Girl -prehm -hard
+Angler -prehm -easy
+Hair Stylist -prehm -medium
+Demolitionist -prehm -easy
+Dryad -prehm -easy
+Tavernkeep -prehm -easy
+Arms Dealer -prehm -easy
+Goblin Tinkerer -prehm -medium
+Witch Doctor -prehm -medium
+Clothier -prehm -medium
+Mechanic -prehm -medium
+Tax Collector hm -easy
+Pirate hm -easy
+Truffle hm -medium
+Wizard hm -easy
+Steampunker hm -medium
+Cyborg hm -hard
+Princess hm -insane
+Dog -prehm -easy
+Cat -prehm -medium
+Bunny -prehm -insane
