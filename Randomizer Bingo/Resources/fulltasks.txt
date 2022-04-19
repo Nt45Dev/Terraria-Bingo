@@ -1,4 +1,4 @@
-Angry Bones -prehm -medium -n[1:50] -enemy 
+Defeat EverscreamAngry Bones -prehm -medium -n[1:50] -enemy 
 Anomura Fungus -prehm -medium -n[1:50] -enemy 
 Antlion -prehm -easy -n[1:50] -enemy 
 Antlion Charger -prehm -medium -n[1:50] -enemy 
@@ -165,6 +165,44 @@ Wolf -hm -easy -n[1:50] -enemy
 World Feeder -hm -easy -cor -n[1:50] -enemy 
 Wraith -hm -easy -n[1:50] -enemy 
 Wyvern -hm -medium -rare -n[1:10] -enemy 
+
+
+King Slime -prehm -boss -easy
+Eye of Cthulhu -prehm -boss -easy
+Eater of Worlds -prehm -boss -easy -cor
+Brain of Cthulhu -prehm -boss -easy -crim
+Queen Bee -prehm -boss -medium
+Skeletron -prehm -boss -medium
+Deerclops -prehm -boss -medium
+Wall of Flesh -prehm -boss -hard
+
+Queen Slime -hm -boss -easy
+The Twins -hm -boss -medium
+The Destroyer -hm -boss -medium
+Skeletron Prime -hm -boss -medium
+Plantera -hm -boss -hard
+Golem -hm -boss -hard
+Duke Fishron -hm -boss -hard
+Empress of Light -hm -boss -hard
+Lunatic Cultist -hm -boss -hard
+Moon Lord -hm -boss -insane
+
+Dark Mage -prehm -boss -medium
+Ogre -hm -boss -medium
+Betsy -hm -boss -hard
+Flying Dutchman -hm -boss -easy
+Mourning Wood -hm -boss -hard
+Pumpking -hm -boss -hard
+Everscream -hm -boss -hard
+Santa-NK1 -hm -boss -hard
+Ice Queen -hm -boss -hard
+Martian Saucer -hm -boss -hard
+Solar Pillar -hm -boss -hard
+Nebula Pillar -hm -boss -hard
+Vortex Pillar -hm -boss -hard
+Stardust Pillar -hm -boss -hard
+
+
 Copper Shortsword -prehm -easy -item -melee -n[1:1]
 Tin Shortsword -prehm -easy -item -melee -n[1:1]
 Wooden Sword -prehm -easy -item -melee -n[1:1]
@@ -450,3 +488,145 @@ Flamethrower -hm -medium -item -ranged -n[1:1]
 Piranha Gun -hm -insane -item -ranged -n[1:1]
 Elf Melter -hm -hard -item -ranged -n[1:1]
 Super Star Shooter -hm -medium -item -ranged -n[1:1]
+
+
+Wand of Sparking -prehm -easy -item -mage -n[1:1]
+Thunder Zapper -prehm -easy -item -mage -n[1:1]
+Amethyst Staff -prehm -easy -item -mage -n[1:1]
+Topaz Staff -prehm -easy -item -mage -n[1:1]
+Sapphire Staff -prehm -easy -item -mage -n[1:1]
+Emerald Staff -prehm -easy -item -mage -n[1:1]
+Ruby Staff -prehm -easy -item -mage -n[1:1]
+Diamond Staff -prehm -easy -item -mage -n[1:1]
+Amber Staff -prehm -easy -item -mage -n[1:1]
+Vilethorn -prehm -easy -item -mage -cor -n[1:1]
+Weather Pain -prehm -medium -item -mage -n[1:1]
+Magic Missile -prehm -medium -item -mage -n[1:1]
+Aqua Scepter -prehm -medium -item -mage -n[1:1]
+Flower of Fire -prehm -hard -item -mage -n[1:1]
+Flamelash -prehm -hard -item -mage -n[1:1]
+
+Sky Fracture -hm -easy -item -mage -n[1:1]
+Crystal Serpent -hm -medium -item -mage -n[1:1]
+Flower of Frost -hm -easy -item -mage -n[1:1]
+Frost Staff -hm -easy -item -mage -n[1:1]
+Crystal Vile Shard -hm -medium -item -mage -n[1:1]
+Life Drain -hm -medium -item -mage -crim -n[1:1]
+Meteor Staff -hm -easy -item -mage -n[1:1]
+Poison Staff -hm -easy -item -mage -n[1:1]
+Rainbow Rod -hm -medium -item -mage -n[1:1]
+Unholy Trident -hm -easy -item -mage -n[1:1]
+Tome of Infinite Wisdom -hm -medium -item -mage -n[1:1]
+Venom Staff -hm -hard -item -mage -n[1:1]
+Nettle Burst -hm -hard -item -mage -n[1:1]
+Bat Scepter -hm -hard -item -mage -n[1:1]
+Blizzard Staff -hm -hard -item -mage -n[1:1]
+Inferno Fork -hm -hard -item -mage -n[1:1]
+Shadowbeam Staff -hm -hard -item -mage -n[1:1]
+Spectre Staff -hm -hard -item -mage -n[1:1]
+Resonance Scepter -hm -insane -item -mage -n[1:1]
+Razorpine -hm -hard -item -mage -n[1:1]
+Staff of Earth -hm -hard -item -mage -n[1:1]
+Betsy's Wrath -hm -insane -item -mage -n[1:1]
+
+Space Gun -prehm -medium -item -mage -n[1:1]
+Bee Gun -prehm -easy -item -mage -n[1:1]
+
+Laser Rifle -hm -easy -item -mage -n[1:1]
+Orange Zapinator  -hm -medium -item -mage -n[1:1]
+Wasp Gun -hm -hard -item -mage -n[1:1]
+Leaf Blower -hm -hard -item -mage -n[1:1]
+Rainbow Gun -hm -insane -item -mage -n[1:1]
+Heat Ray -hm -insane -item -mage -n[1:1]
+Laser Machinegun -hm -insane -item -mage -n[1:1]
+Charged Blaster Cannon -hm -insane -item -mage -n[1:1]
+Bubble Gun -hm -hard -item -mage -n[1:1]
+
+Water Bolt -prehm -medium -item -mage -n[1:1]
+Book of Skulls -prehm -medium -item -mage -n[1:1]
+Demon Scythe -prehm -hard -item -mage -n[1:1]
+
+Cursed Flames -hm -easy -item -mage -cor -n[1:1]
+Golden Shower -hm -easy -item -mage -crim -n[1:1]
+Crystal Storm -hm -easy -item -mage -n[1:1]
+Magnet Sphere -hm -insane -item -mage -n[1:1]
+Razorblade Typhoon -hm -hard -item -mage -n[1:1]
+Lunar Flare -hm -insane -item -mage -n[1:1]
+
+Crimson Rod -prehm -easy -item -mage -crim -n[1:1]
+
+Ice Rod -hm -easy -item -mage -n[1:1]
+Clinger Staff -hm -medium -item -mage -cor -n[1:1]
+Nimbus Rod -hm -easy -item -mage -n[1:1]
+Magic Dagger -hm -easy -item -mage -n[1:1]
+Medusa Head -hm -easy -item -mage -n[1:1]
+Spirit Flame -hm -medium -item -mage -n[1:1]
+Shadowflame Hex Doll -hm -easy -item -mage -n[1:1]
+Blood Thorn -hm -medium -item -mage -n[1:1]
+Magical Harp -hm -medium -item -mage -n[1:1]
+Toxic Flask -hm -medium -item -mage -n[1:1]
+Nightglow -hm -hard -item -mage -n[1:1]
+Stellar Tune -hm -insane -item -mage -n[1:1]
+Nebula Arcanum -hm -insane -item -mage -n[1:1]
+Nebula Blaze -hm -insane -item -mage -n[1:1]
+Last Prism -hm -insane -item -mage -n[1:1]
+
+Finch Staff -prehm -easy -item -summoner -n[1:1]
+Slime Staff -prehm -insane -item -summoner -n[1:1]
+Flinx Staff -prehm -easy -item -summoner -n[1:1]
+Abigail's Flower -prehm -easy -item -summoner -n[1:1]
+Hornet Staff -prehm -medium -item -summoner -n[1:1]
+Vampire Frog Staff -prehm -medium -item -summoner -n[1:1]
+Imp Staff -prehm -hard -item -summoner -n[1:1]
+
+Blade Staff -hm -easy -item -summoner -n[1:1]
+Spider Staff -hm -easy -item -summoner -n[1:1]
+Pirate Staff -hm -insane -item -summoner -n[1:1]
+Sanguine Staff -hm -medium -item -summoner -n[1:1]
+Optic Staff -hm -medium -item -summoner -n[1:1]
+Deadly Sphere Staff -hm -medium -item -summoner -n[1:1]
+Pygmy Staff -hm -hard -item -summoner -n[1:1]
+Raven Staff -hm -hard -item -summoner -n[1:1]
+Desert Tiger Staff -hm -insane -item -summoner -n[1:1]
+Tempest Staff -hm -hard -item -summoner -n[1:1]
+Terraprisma -hm -insane -item -summoner -n[1:1]
+Xeno Staff -hm -insane -item -summoner -n[1:1]
+Stardust Cell Staff -hm -insane -item -summoner -n[1:1]
+Stardust Dragon Staff -hm -insane -item -summoner -n[1:1]
+
+Lightning Aura Rod -prehm -easy -item -summoner -n[1:1]
+Flameburst Rod -prehm -easy -item -summoner -n[1:1]
+Explosive Trap Rod -prehm -easy -item -summoner -n[1:1]
+Ballista Rod -prehm -easy -item -summoner -n[1:1]
+Houndius Shootius -prehm -medium -item -summoner -n[1:1]
+
+Queen Spider Staff -hm -easy -item -summoner -n[1:1]
+Lightning Aura Cane -hm -medium -item -summoner -n[1:1]
+Flameburst Cane -hm -medium -item -summoner -n[1:1]
+Explosive Trap Cane -hm -medium -item -summoner -n[1:1]
+Ballista Cane -hm -medium -item -summoner -n[1:1]
+Staff of the Frost Hydra -hm -insane -item -summoner -n[1:1]
+Lightning Aura Staff -hm -hard -item -summoner -n[1:1]
+Flameburst Staff -hm -hard -item -summoner -n[1:1]
+Explosive Trap Staff -hm -hard -item -summoner -n[1:1]
+Ballista Staff -hm -hard -item -summoner -n[1:1]
+Lunar Portal Staff -hm -insane -item -summoner -n[1:1]
+Rainbow Crystal Staff -hm -insane -item -summoner -n[1:1]
+
+
+Leather Whip -prehm -easy -item -summoner -n[1:1]
+Snapthorn -prehm -easy -item -summoner -n[1:1]
+Spinal Tap -prehm -medium -item -summoner -n[1:1]
+
+Firecracker -hm -easy -item -summoner -n[1:1]
+Cool Whip -hm -easy -item -summoner -n[1:1]
+Durendal -hm -medium -item -summoner -n[1:1]
+Dark Harvest -hm -hard -item -summoner -n[1:1]
+Morning Star -hm -hard -item -summoner -n[1:1]
+Kaleidoscope -hm -insane -item -summoner -n[1:1]
+
+Snowball Launcher -prehm -insane -item -n[1:1]
+
+Cannon -hm -easy -item -n[1:1]
+Bunny Cannon -hm -easy -item -n[1:1]
+Land Mine -hm -hard -item -n[1:5]

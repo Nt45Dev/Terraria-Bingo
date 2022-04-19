@@ -165,3 +165,40 @@ Wolf -hm -easy -n[1:50] -enemy
 World Feeder -hm -easy -cor -n[1:50] -enemy 
 Wraith -hm -easy -n[1:50] -enemy 
 Wyvern -hm -medium -rare -n[1:10] -enemy 
+
+
+King Slime -prehm -boss -easy
+Eye of Cthulhu -prehm -boss -easy
+Eater of Worlds -prehm -boss -easy -cor
+Brain of Cthulhu -prehm -boss -easy -crim
+Queen Bee -prehm -boss -medium
+Skeletron -prehm -boss -medium
+Deerclops -prehm -boss -medium
+Wall of Flesh -prehm -boss -hard
+
+Queen Slime -hm -boss -easy
+The Twins -hm -boss -medium
+The Destroyer -hm -boss -medium
+Skeletron Prime -hm -boss -medium
+Plantera -hm -boss -hard
+Golem -hm -boss -hard
+Duke Fishron -hm -boss -hard
+Empress of Light -hm -boss -hard
+Lunatic Cultist -hm -boss -hard
+Moon Lord -hm -boss -insane
+
+Dark Mage -prehm -boss -medium
+Ogre -hm -boss -medium
+Betsy -hm -boss -hard
+Flying Dutchman -hm -boss -easy
+Mourning Wood -hm -boss -hard
+Pumpking -hm -boss -hard
+Everscream -hm -boss -hard
+Santa-NK1 -hm -boss -hard
+Ice Queen -hm -boss -hard
+Martian Saucer -hm -boss -hard
+Solar Pillar -hm -boss -hard
+Nebula Pillar -hm -boss -hard
+Vortex Pillar -hm -boss -hard
+Stardust Pillar -hm -boss -hard
+

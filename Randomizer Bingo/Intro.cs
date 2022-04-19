@@ -471,6 +471,7 @@ namespace Randomizer_Bingo
                     
                     
                 }
+                sbmin.AppendLine();
                 foreach (string entry in File.ReadAllLines(@"../../../Resources/itemlist.txt"))
                 {
                     sbmin.AppendLine(entry);
@@ -659,6 +660,12 @@ namespace Randomizer_Bingo
 
                             
                             taskrandnum = random.Next(int.Parse(sbmin.ToString()), int.Parse(sbmax.ToString()));
+                            if (taskrandnum > 1)
+                            {
+                                taskrandnum = (taskrandnum * difficultyslider.Value) + random.Next(0, difficultyslider.Value);
+                                
+                                
+                            }
                             
                             
                             for (int i = endmax; i != startmin -2; i--)
@@ -684,40 +691,15 @@ namespace Randomizer_Bingo
 
 
 
-                        al.Add("B1string");
-                        al.Add("B2string");
-                        al.Add("B3string");
-                        al.Add("B4string");
-                        al.Add("B5string");
-                        al.Add("I1string");
-                        al.Add("I2string");
-                        al.Add("I3string");
-                        al.Add("I4string");
-                        al.Add("I5string");
-                        al.Add("N1string");
-                        al.Add("N2string");
-                        al.Add("N3string");
-                        al.Add("N4string");
-                        al.Add("N5string");
-                        al.Add("G1string");
-                        al.Add("G2string");
-                        al.Add("G3string");
-                        al.Add("G4string");
-                        al.Add("G5string");
-                        al.Add("O1string");
-                        al.Add("O2string");
-                        al.Add("O3string");
-                        al.Add("O4string");
-                        al.Add("O5string");
-
+                    
 
 
 
         //Generate card based on difficulty and options
-        possibletasks = entrydata.Clone();
+                possibletasks = entrydata.Clone();
                 possibletasks.Clear();
                 sbmin.Clear();
-                //Pre-hardmode only
+                
 
 
                 if (prehardmodechk.Checked && !hardmodechk.Checked)
@@ -770,7 +752,9 @@ namespace Randomizer_Bingo
                     possibletasks.ImportRow(prehmtask);
                 }
                 sbseed.Clear();
-                sbseed.Append($"mult:[{difficultyslider.Value.ToString()}] ");
+                
+
+
                 generatecard();
                 B1string = sbmin.ToString();
                 possibletasks.Rows[randrowint].Delete();
@@ -889,7 +873,7 @@ namespace Randomizer_Bingo
             temptable = possibletasks.Clone();
             temptable.Rows.Clear();
             sbmin.Clear();
-            int r = randomtemp.Next(1, 3);
+            int r = randomtemp.Next(1, 4);
             objpicker.Clear();
             
             if (r == 1)
@@ -962,8 +946,102 @@ namespace Randomizer_Bingo
                 {
                     objpicker.Append(" )");
                 }
+                //Determine difficulty based on user input from slider
+                int r2 = randomtemp.Next(0, 21);
+                if (hardmodechk.Checked)
+                {
+                    //Increase difficulty slightly for all difficulties if hardmode is selected. Adds 1/20 for each chance. Example: Likely to shift easy to medium and medium to hard at higher difficulties.
+                    r2++;
+                }
+
+                //Easy
+                if (difficultyslider.Value == 1)
+                {
+                    if (r2 >= 1 && r2 <= 8)
+                    {
+                        objpicker.Append(" and Easy = 1");
+                    }
+                    else if (r2 >= 9 && r2 <= 14)
+                    {
+                        objpicker.Append(" and Medium = 1");
+                    }
+                    else if (r2 >= 15 && r2 <= 18)
+                    {
+                        objpicker.Append(" and Hard = 1");
+                    }
+                    else if (r2 >= 19)
+                    {
+                        objpicker.Append(" and Insane = 1");
+                    }
+                }
+
+                //Medium
+                else if (difficultyslider.Value == 2)
+                {
+                    if (r2 >= 1 && r2 <= 5)
+                    {
+                        objpicker.Append(" and Easy = 1");
+                    }
+                    else if (r2 >= 6 && r2 <= 13)
+                    {
+                        objpicker.Append(" and Medium = 1");
+                    }
+                    else if (r2 >= 14 && r2 <= 18)
+                    {
+                        objpicker.Append(" and Hard = 1");
+                    }
+                    else if (r2 >= 19)
+                    {
+                        objpicker.Append(" and Insane = 1");
+                    }
+                }
+
+                //Hard
+                else if (difficultyslider.Value == 3)
+                {
+                    if (r2 >= 1 && r2 <= 4)
+                    {
+                        objpicker.Append(" and Easy = 1");
+                    }
+                    else if (r2 >= 5 && r2 <= 9)
+                    {
+                        objpicker.Append(" and Medium = 1");
+                    }
+                    else if (r2 >= 10 && r2 <= 17)
+                    {
+                        objpicker.Append(" and Hard = 1");
+                    }
+                    else if (r2 >= 18)
+                    {
+                        objpicker.Append(" and Insane = 1");
+                    }
+                }
+
+                //Insane
+                else if (difficultyslider.Value == 4)
+                {
+                    if (r2 >= 1 && r2 <= 2)
+                    {
+                        objpicker.Append(" and Easy = 1");
+                    }
+                    else if (r2 >= 3 && r2 <= 6)
+                    {
+                        objpicker.Append(" and Medium = 1");
+                    }
+                    else if (r2 >= 7 && r2 <= 11)
+                    {
+                        objpicker.Append(" and Hard = 1");
+                    }
+                    else if (r2 >= 12)
+                    {
+                        objpicker.Append(" and Insane = 1");
+                    }
+                }
                 foreach (DataRow dr in possibletasks.Select(objpicker.ToString()))
                 {
+                   
+
+                    
                     temptable.ImportRow(dr);
                 }
             }
@@ -972,7 +1050,7 @@ namespace Randomizer_Bingo
                 //Select Boss
                 foreach (DataRow dr in possibletasks.Select("Boss = 1"))
                 {
-                    temptable.Rows.Add(dr);
+                    temptable.ImportRow(dr);
                 }
             }
             else if (r == 4)
@@ -991,13 +1069,19 @@ namespace Randomizer_Bingo
                     temptable.Rows.Add(dr);
                 }
             }
+            try
+            {
+                randrowint = random.Next(1, temptable.Rows.Count);
+            }
+            catch (Exception ex)
+            {
 
-            randrowint = random.Next(1, temptable.Rows.Count);
+            }
             if (temptable.Rows[randrowint]["Enemy"] == "1")
             {
                 sbmin.Append("Defeat ");
                 sbmin.Append(temptable.Rows[randrowint]["TaskName"]).ToString();
-                killcount = int.Parse(temptable.Rows[randrowint]["Num"].ToString()) * difficultyslider.Value;
+                killcount = int.Parse(temptable.Rows[randrowint]["Num"].ToString());
                 sbmin.Append($" x {killcount}");
             }
             else if (temptable.Rows[randrowint]["Item"] == "1")
@@ -1007,10 +1091,21 @@ namespace Randomizer_Bingo
                 killcount = int.Parse(temptable.Rows[randrowint]["Num"].ToString());
                 if (killcount > 1)
                 {
-                    killcount = killcount * difficultyslider.Value;
+ 
                     sbmin.Append($" x {killcount}");
                 }
                 
+            }
+            else if (temptable.Rows[randrowint]["Boss"] == "1")
+            {
+                sbmin.Append("Defeat ");
+                sbmin.Append(temptable.Rows[randrowint]["TaskName"]).ToString();
+                killcount = int.Parse(temptable.Rows[randrowint]["Num"].ToString());
+                if (killcount > 1)
+                {
+
+                    sbmin.Append($" x {killcount}");
+                }
             }
             
             sbseed.Append(temptable.Rows[randrowint]["TaskID"].ToString() + "[" + temptable.Rows[randrowint]["Num"].ToString() + "] -");
@@ -1029,6 +1124,8 @@ namespace Randomizer_Bingo
             {
                 
                 corruptionchk.Checked = false;
+                
+                
                 if (hardmodechk.Checked)
                 {
                     worldpb.Image = Image.FromFile(@"../../../Resources/HMCrimson.png");
