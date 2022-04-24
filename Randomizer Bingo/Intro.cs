@@ -1052,6 +1052,10 @@ namespace Randomizer_Bingo
                 {
                     objpicker.Append($" and (TaskID not in ({comp.ToString()}))");
                 }
+                if (comp.ToString()[comp.ToString().Length - 1] == Convert.ToChar(","))
+                {
+                    comp.Remove(comp.ToString().Length - 1, 1);
+                }
                 
                 foreach (DataRow dr in possibletasks.Select(objpicker.ToString()))
                 {
