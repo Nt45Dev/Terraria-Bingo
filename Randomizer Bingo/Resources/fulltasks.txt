@@ -1,4 +1,4 @@
-Defeat EverscreamAngry Bones -prehm -medium -n[1:50] -enemy 
+Defeat Undead Viking x 16Angry Bones -prehm -medium -n[1:50] -enemy 
 Anomura Fungus -prehm -medium -n[1:50] -enemy 
 Antlion -prehm -easy -n[1:50] -enemy 
 Antlion Charger -prehm -medium -n[1:50] -enemy 

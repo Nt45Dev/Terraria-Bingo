@@ -23,6 +23,7 @@ namespace Randomizer_Bingo
         public static DataTable entrydata = new DataTable();
         public static DataTable possibletasks = new DataTable();
         public static DataTable temptable = new DataTable();
+        public DataTable selectedtable = new DataTable();
         public DataRow randrow;
         public DataRow temprow;
         public static string seed;
@@ -75,6 +76,7 @@ namespace Randomizer_Bingo
         public StringBuilder sbmin = new StringBuilder();
         public StringBuilder sbmax = new StringBuilder();
         public StringBuilder objpicker = new StringBuilder();
+        public StringBuilder comp = new StringBuilder();
         public Random random = new Random();
         public Random randomtemp = new Random();
         public ArrayList al = new ArrayList();
@@ -698,6 +700,8 @@ namespace Randomizer_Bingo
         //Generate card based on difficulty and options
                 possibletasks = entrydata.Clone();
                 possibletasks.Clear();
+                selectedtable = possibletasks.Clone();
+                selectedtable.Rows.Clear();
                 sbmin.Clear();
                 
 
@@ -757,7 +761,9 @@ namespace Randomizer_Bingo
 
                 generatecard();
                 B1string = sbmin.ToString();
+                
                 possibletasks.Rows[randrowint].Delete();
+                
                 generatecard();
                 B2string = sbmin.ToString();
                 possibletasks.Rows[randrowint].Delete();
@@ -829,7 +835,9 @@ namespace Randomizer_Bingo
                 possibletasks.Rows[randrowint].Delete(); 
                 generatecard();
                 O5string = sbmin.ToString();
-                possibletasks.Rows[randrowint].Delete();
+
+                selectedtable.Rows.Clear();
+
                 if (freespacechk.Checked)
                 {
                     freespace = true;
@@ -881,7 +889,9 @@ namespace Randomizer_Bingo
                 //Select Enemy
                 foreach (DataRow dr in possibletasks.Select("Enemy = 1"))
                 {
-                    temptable.ImportRow(dr);
+                   
+                   temptable.ImportRow(dr);
+                  
                 }
 
 
@@ -1037,12 +1047,19 @@ namespace Randomizer_Bingo
                         objpicker.Append(" and Insane = 1");
                     }
                 }
+                
+                if (comp.ToString() != "")
+                {
+                    objpicker.Append($" and (TaskID not in ({comp.ToString()}))");
+                }
+                
                 foreach (DataRow dr in possibletasks.Select(objpicker.ToString()))
                 {
                    
 
                     
                     temptable.ImportRow(dr);
+                    
                 }
             }
             else if (r == 3)
@@ -1051,6 +1068,7 @@ namespace Randomizer_Bingo
                 foreach (DataRow dr in possibletasks.Select("Boss = 1"))
                 {
                     temptable.ImportRow(dr);
+                    
                 }
             }
             else if (r == 4)
@@ -1069,14 +1087,16 @@ namespace Randomizer_Bingo
                     temptable.Rows.Add(dr);
                 }
             }
-            try
-            {
-                randrowint = random.Next(1, temptable.Rows.Count);
-            }
-            catch (Exception ex)
-            {
+            DataColumn[] col = new DataColumn[1];
+            col[0] = temptable.Columns["TaskID"];
+           
+            
 
-            }
+             randrowint = random.Next(0, temptable.Rows.Count);
+
+
+            comp.Append(temptable.Rows[randrowint]["TaskID"].ToString() + ", ");
+
             if (temptable.Rows[randrowint]["Enemy"] == "1")
             {
                 sbmin.Append("Defeat ");
