@@ -30,6 +30,7 @@ namespace Randomizer_Bingo
         public int id;
         public int idtask;
         public int taskrandnum;
+        public int r2;
         public static bool blackout;
         public static decimal bingosreq;
         public static bool prehardmode;
@@ -77,6 +78,7 @@ namespace Randomizer_Bingo
         public StringBuilder sbmax = new StringBuilder();
         public StringBuilder objpicker = new StringBuilder();
         public StringBuilder comp = new StringBuilder();
+        public StringBuilder sbfile = new StringBuilder();
         public Random random = new Random();
         public Random randomtemp = new Random();
         public ArrayList al = new ArrayList();
@@ -466,22 +468,23 @@ namespace Randomizer_Bingo
                 }
                 entrydata.Rows.Clear();
                 //Rebuild fulltasks.txt file based on the contents of the other files for each category.
+                sbfile.Clear();
                 File.Delete(@"../../../Resources/fulltasks.txt");
                 foreach (string entry in File.ReadAllLines(@"../../../Resources/enemylist.txt"))
                 {
-                    sbmin.AppendLine(entry);
+                    sbfile.AppendLine(entry);
                     
                     
                 }
-                sbmin.AppendLine();
+                sbfile.AppendLine();
                 foreach (string entry in File.ReadAllLines(@"../../../Resources/itemlist.txt"))
                 {
-                    sbmin.AppendLine(entry);
+                    sbfile.AppendLine(entry);
 
 
                 }
                 idtask = 0;
-                File.AppendAllText(@"../../../Resources/fulltasks.txt", sbmin.ToString());
+                File.AppendAllText(@"../../../Resources/fulltasks.txt", sbfile.ToString());
                     foreach (string task in File.ReadLines(@"../../../Resources/fulltasks.txt"))
                 {
                     idtask++;
@@ -762,77 +765,77 @@ namespace Randomizer_Bingo
                 generatecard();
                 B1string = sbmin.ToString();
                 
-                possibletasks.Rows[randrowint].Delete();
                 
+                comp.Clear();
                 generatecard();
                 B2string = sbmin.ToString();
-                possibletasks.Rows[randrowint].Delete();
+                
                 generatecard();
                 B3string = sbmin.ToString();
-                possibletasks.Rows[randrowint].Delete();
+                
                 generatecard();
                 B4string = sbmin.ToString();
-                possibletasks.Rows[randrowint].Delete();
+                
                 generatecard();
                 B5string = sbmin.ToString();
-                possibletasks.Rows[randrowint].Delete();
+                
                 generatecard();
                 I1string = sbmin.ToString();
-                possibletasks.Rows[randrowint].Delete();
+                
                 generatecard();
                 I2string = sbmin.ToString();
-                possibletasks.Rows[randrowint].Delete();
+                
                 generatecard();
                 I3string = sbmin.ToString();
-                possibletasks.Rows[randrowint].Delete();
+                
                 generatecard();
                 I4string = sbmin.ToString();
-                possibletasks.Rows[randrowint].Delete();
+                
                 generatecard();
                 I5string = sbmin.ToString();
-                possibletasks.Rows[randrowint].Delete();
+                
                 generatecard();
                 N1string = sbmin.ToString();
-                possibletasks.Rows[randrowint].Delete();
+                
                 generatecard();
                 N2string = sbmin.ToString();
-                possibletasks.Rows[randrowint].Delete();
+                
                 generatecard();
                 N3string = sbmin.ToString();
-                possibletasks.Rows[randrowint].Delete();
+                
                 generatecard();
                 N4string = sbmin.ToString();
-                possibletasks.Rows[randrowint].Delete();
+                
                 generatecard();
                 N5string = sbmin.ToString();
-                possibletasks.Rows[randrowint].Delete();
+                
                 generatecard();
                 G1string = sbmin.ToString();
-                possibletasks.Rows[randrowint].Delete();
+                
                 generatecard();
                 G2string = sbmin.ToString();
-                possibletasks.Rows[randrowint].Delete(); 
+                 
                 generatecard();
                 G3string = sbmin.ToString();
-                possibletasks.Rows[randrowint].Delete(); 
+                 
                 generatecard();
                 G4string = sbmin.ToString();
-                possibletasks.Rows[randrowint].Delete(); 
+                 
                 generatecard();
                 G5string = sbmin.ToString();
-                possibletasks.Rows[randrowint].Delete(); 
+                 
                 generatecard();
                 O1string = sbmin.ToString();
-                possibletasks.Rows[randrowint].Delete(); 
+                 
                 generatecard();
                 O2string = sbmin.ToString();
-                possibletasks.Rows[randrowint].Delete(); 
+                 
                 generatecard();
                 O3string = sbmin.ToString();
-                possibletasks.Rows[randrowint].Delete(); 
+                 
                 generatecard();
                 O4string = sbmin.ToString();
-                possibletasks.Rows[randrowint].Delete(); 
+                 
                 generatecard();
                 O5string = sbmin.ToString();
 
@@ -876,6 +879,103 @@ namespace Randomizer_Bingo
                 }
             }
         }
+
+
+        public void difficultygen()
+        {
+            r2 = randomtemp.Next(0, 21);
+            if (hardmodechk.Checked)
+            {
+                //Increase difficulty slightly for all difficulties if hardmode is selected. Adds 1/20 for each chance. Example: Likely to shift easy to medium and medium to hard at higher difficulties.
+                r2++;
+            }
+
+            //Easy
+            if (difficultyslider.Value == 1)
+            {
+                if (r2 >= 1 && r2 <= 8)
+                {
+                    objpicker.Append(" and Easy = 1");
+                }
+                else if (r2 >= 9 && r2 <= 14)
+                {
+                    objpicker.Append(" and Medium = 1");
+                }
+                else if (r2 >= 15 && r2 <= 18)
+                {
+                    objpicker.Append(" and Hard = 1");
+                }
+                else if (r2 >= 19)
+                {
+                    objpicker.Append(" and Insane = 1");
+                }
+            }
+
+            //Medium
+            else if (difficultyslider.Value == 2)
+            {
+                if (r2 >= 1 && r2 <= 5)
+                {
+                    objpicker.Append(" and Easy = 1");
+                }
+                else if (r2 >= 6 && r2 <= 13)
+                {
+                    objpicker.Append(" and Medium = 1");
+                }
+                else if (r2 >= 14 && r2 <= 18)
+                {
+                    objpicker.Append(" and Hard = 1");
+                }
+                else if (r2 >= 19)
+                {
+                    objpicker.Append(" and Insane = 1");
+                }
+            }
+
+            //Hard
+            else if (difficultyslider.Value == 3)
+            {
+                if (r2 >= 1 && r2 <= 4)
+                {
+                    objpicker.Append(" and Easy = 1");
+                }
+                else if (r2 >= 5 && r2 <= 9)
+                {
+                    objpicker.Append(" and Medium = 1");
+                }
+                else if (r2 >= 10 && r2 <= 17)
+                {
+                    objpicker.Append(" and Hard = 1");
+                }
+                else if (r2 >= 18)
+                {
+                    objpicker.Append(" and Insane = 1");
+                }
+            }
+
+            //Insane
+            else if (difficultyslider.Value == 4)
+            {
+                if (r2 >= 1 && r2 <= 2)
+                {
+                    objpicker.Append(" and Easy = 1");
+                }
+                else if (r2 >= 3 && r2 <= 6)
+                {
+                    objpicker.Append(" and Medium = 1");
+                }
+                else if (r2 >= 7 && r2 <= 11)
+                {
+                    objpicker.Append(" and Hard = 1");
+                }
+                else if (r2 >= 12)
+                {
+                    objpicker.Append(" and Insane = 1");
+                }
+            }
+        }
+
+
         public void generatecard()
         {
             temptable = possibletasks.Clone();
@@ -898,8 +998,11 @@ namespace Randomizer_Bingo
             }
             if (r == 2)
             {
-                //Select Item
-                objpicker.Append("Item = 1");
+                while (temptable.Rows.Count == 0)
+                {
+                    objpicker.Clear();
+                    //Select Item
+                    objpicker.Append("Item = 1");
                 if (meleechk.Checked)
                 {
                     objpicker.Append(" and (Melee = 1");
@@ -957,122 +1060,35 @@ namespace Randomizer_Bingo
                     objpicker.Append(" )");
                 }
                 //Determine difficulty based on user input from slider
-                int r2 = randomtemp.Next(0, 21);
-                if (hardmodechk.Checked)
-                {
-                    //Increase difficulty slightly for all difficulties if hardmode is selected. Adds 1/20 for each chance. Example: Likely to shift easy to medium and medium to hard at higher difficulties.
-                    r2++;
-                }
+                difficultygen();
 
-                //Easy
-                if (difficultyslider.Value == 1)
-                {
-                    if (r2 >= 1 && r2 <= 8)
-                    {
-                        objpicker.Append(" and Easy = 1");
-                    }
-                    else if (r2 >= 9 && r2 <= 14)
-                    {
-                        objpicker.Append(" and Medium = 1");
-                    }
-                    else if (r2 >= 15 && r2 <= 18)
-                    {
-                        objpicker.Append(" and Hard = 1");
-                    }
-                    else if (r2 >= 19)
-                    {
-                        objpicker.Append(" and Insane = 1");
-                    }
-                }
-
-                //Medium
-                else if (difficultyslider.Value == 2)
-                {
-                    if (r2 >= 1 && r2 <= 5)
-                    {
-                        objpicker.Append(" and Easy = 1");
-                    }
-                    else if (r2 >= 6 && r2 <= 13)
-                    {
-                        objpicker.Append(" and Medium = 1");
-                    }
-                    else if (r2 >= 14 && r2 <= 18)
-                    {
-                        objpicker.Append(" and Hard = 1");
-                    }
-                    else if (r2 >= 19)
-                    {
-                        objpicker.Append(" and Insane = 1");
-                    }
-                }
-
-                //Hard
-                else if (difficultyslider.Value == 3)
-                {
-                    if (r2 >= 1 && r2 <= 4)
-                    {
-                        objpicker.Append(" and Easy = 1");
-                    }
-                    else if (r2 >= 5 && r2 <= 9)
-                    {
-                        objpicker.Append(" and Medium = 1");
-                    }
-                    else if (r2 >= 10 && r2 <= 17)
-                    {
-                        objpicker.Append(" and Hard = 1");
-                    }
-                    else if (r2 >= 18)
-                    {
-                        objpicker.Append(" and Insane = 1");
-                    }
-                }
-
-                //Insane
-                else if (difficultyslider.Value == 4)
-                {
-                    if (r2 >= 1 && r2 <= 2)
-                    {
-                        objpicker.Append(" and Easy = 1");
-                    }
-                    else if (r2 >= 3 && r2 <= 6)
-                    {
-                        objpicker.Append(" and Medium = 1");
-                    }
-                    else if (r2 >= 7 && r2 <= 11)
-                    {
-                        objpicker.Append(" and Hard = 1");
-                    }
-                    else if (r2 >= 12)
-                    {
-                        objpicker.Append(" and Insane = 1");
-                    }
-                }
-                
                 if (comp.ToString() != "")
                 {
                     objpicker.Append($" and (TaskID not in ({comp.ToString()}))");
                 }
-                if (comp.ToString()[comp.ToString().Length - 1] == Convert.ToChar(","))
-                {
-                    comp.Remove(comp.ToString().Length - 1, 1);
-                }
-                
+
+
                 foreach (DataRow dr in possibletasks.Select(objpicker.ToString()))
                 {
-                   
-
-                    
                     temptable.ImportRow(dr);
-                    
                 }
+            }
             }
             else if (r == 3)
             {
-                //Select Boss
-                foreach (DataRow dr in possibletasks.Select("Boss = 1"))
+                while (temptable.Rows.Count == 0)
                 {
-                    temptable.ImportRow(dr);
-                    
+                    objpicker.Clear();
+                    objpicker.Append("Boss = 1");
+                    difficultygen();
+                    if (comp.ToString() != "")
+                    {
+                        objpicker.Append($" and (TaskID not in ({comp.ToString()}))");
+                    }
+                    foreach (DataRow dr in possibletasks.Select(objpicker.ToString()))
+                    {
+                        temptable.ImportRow(dr);
+                    }
                 }
             }
             else if (r == 4)
@@ -1091,15 +1107,14 @@ namespace Randomizer_Bingo
                     temptable.Rows.Add(dr);
                 }
             }
-            DataColumn[] col = new DataColumn[1];
-            col[0] = temptable.Columns["TaskID"];
+           
            
             
 
              randrowint = random.Next(0, temptable.Rows.Count);
 
 
-            comp.Append(temptable.Rows[randrowint]["TaskID"].ToString() + ", ");
+            comp.Append(temptable.Rows[randrowint]["TaskID"].ToString() + ",");
 
             if (temptable.Rows[randrowint]["Enemy"] == "1")
             {
