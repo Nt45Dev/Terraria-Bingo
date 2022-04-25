@@ -1252,10 +1252,32 @@ namespace Randomizer_Bingo
 
         private void Intro_Load(object sender, EventArgs e)
         {
-            ToolTip imagett = new ToolTip();
-            imagett.AutomaticDelay = 500;
-            imagett.ReshowDelay = 500;
-            imagett.SetToolTip(this.pictureBox1, "Paste from clipboard");
+            ToolTip tt = new ToolTip();
+            tt.AutomaticDelay = 500;
+            tt.ReshowDelay = 500;
+            tt.SetToolTip(this.pictureBox1, "Paste from clipboard");
+            tt.SetToolTip(this.prehardmodechk, "Check to include tasks from Pre-Hardmode.");
+            tt.SetToolTip(this.hardmodechk, "Check to include tasks from Hardmode.");
+            tt.SetToolTip(this.crimsonchk, "Select this if you are playing on a Crimson world.");
+            tt.SetToolTip(this.corruptionchk, "Select this if you are playing on a Corruption world.");
+            tt.SetToolTip(this.multiplayerchk, "Select this if you want to include multiplayer items such as wormhole potions.");
+            tt.SetToolTip(this.blackoutchk, "In Blackout, all squares must be completed. Fun fact: That would be 12 Bingos.");
+            tt.SetToolTip(this.freespacechk, "Select this if you would like to have a free space in the middle of the card. (N3).");
+            tt.SetToolTip(this.seedonlychk, "Select this if you would like to create a seed and have it copied to the clipboard instead \n" +
+                "of creating a card when pressing Generate. Useful for not spoiling cards for races.");
+            tt.SetToolTip(this.meleechk, "Check to include Melee items. If no classes are checked, all classes will be included." +
+                "Only selected classes will be included.");
+            tt.SetToolTip(this.rangerchk, "Check to include Ranger items. If no classes are checked, all classes will be included." +
+                "Only selected classes will be included.");
+            tt.SetToolTip(this.magechk, "Check to include Mage items. If no classes are checked, all classes will be included." +
+                "Only selected classes will be included.");
+            tt.SetToolTip(this.summonerchk, "Check to include Summoner items. If no classes are checked, all classes will be included." +
+                "Only selected classes will be included.");
+
+
+
+
+
             pictureBox1.Image = Image.FromFile(@"../../../Resources/Clipboard.png");
             difficultypb.SizeMode = PictureBoxSizeMode.StretchImage;
             worldpb.SizeMode = PictureBoxSizeMode.StretchImage;
