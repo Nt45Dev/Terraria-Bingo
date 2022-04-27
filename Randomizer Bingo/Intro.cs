@@ -759,14 +759,12 @@ namespace Randomizer_Bingo
                     possibletasks.ImportRow(prehmtask);
                 }
                 sbseed.Clear();
-                
 
 
+                comp.Clear();
                 generatecard();
                 B1string = sbmin.ToString();
                 
-                
-                comp.Clear();
                 generatecard();
                 B2string = sbmin.ToString();
                 
@@ -984,17 +982,22 @@ namespace Randomizer_Bingo
             int r = randomtemp.Next(1, 4);
             objpicker.Clear();
             
+
             if (r == 1)
             {
-                //Select Enemy
-                foreach (DataRow dr in possibletasks.Select("Enemy = 1"))
-                {
-                   
-                   temptable.ImportRow(dr);
-                  
+                while (temptable.Rows.Count == 0) { 
+                    objpicker.Clear();
+                    objpicker.Append("Enemy = 1");
+                    difficultygen();
+                    if (comp.ToString() != "")
+                    {
+                        objpicker.Append($" and (TaskID not in ({comp.ToString()}))");
+                    }
+                    foreach (DataRow dr in possibletasks.Select(objpicker.ToString()))
+                    {
+                        temptable.ImportRow(dr);
+                    }
                 }
-
-
             }
             if (r == 2)
             {
@@ -1003,22 +1006,22 @@ namespace Randomizer_Bingo
                     objpicker.Clear();
                     //Select Item
                     objpicker.Append("Item = 1");
-                if (meleechk.Checked)
-                {
-                    objpicker.Append(" and (Melee = 1");
-                    if (rangerchk.Checked)
+                    if (meleechk.Checked)
                     {
-                        objpicker.Append(" or Ranged = 1");
+                        objpicker.Append(" and (Melee = 1");
+                        if (rangerchk.Checked)
+                        {
+                            objpicker.Append(" or Ranged = 1");
+                        }
+                        if (magechk.Checked)
+                        {
+                            objpicker.Append(" or Mage = 1");
+                        }
+                        if (summonerchk.Checked)
+                        {
+                            objpicker.Append(" or Summoner = 1");
+                        }
                     }
-                    if (magechk.Checked)
-                    {
-                        objpicker.Append(" or Mage = 1");
-                    }
-                    if (summonerchk.Checked)
-                    {
-                        objpicker.Append(" or Summoner = 1");
-                    }
-                }
                 else if (rangerchk.Checked)
                 {
 
@@ -1076,8 +1079,10 @@ namespace Randomizer_Bingo
             }
             else if (r == 3)
             {
+                int loop = 0;
                 while (temptable.Rows.Count == 0)
                 {
+                    loop++;
                     objpicker.Clear();
                     objpicker.Append("Boss = 1");
                     difficultygen();
@@ -1088,6 +1093,12 @@ namespace Randomizer_Bingo
                     foreach (DataRow dr in possibletasks.Select(objpicker.ToString()))
                     {
                         temptable.ImportRow(dr);
+                    }
+                    if (loop > 25)
+                    {
+                        sbmin.Clear();
+                        generatecard();
+                        sbmin.Clear();
                     }
                 }
             }
@@ -1107,8 +1118,7 @@ namespace Randomizer_Bingo
                     temptable.Rows.Add(dr);
                 }
             }
-           
-           
+
             
 
              randrowint = random.Next(0, temptable.Rows.Count);

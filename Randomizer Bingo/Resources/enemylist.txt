@@ -21,8 +21,7 @@ Dark Caster -prehm -medium -n[1:50] -enemy
 Demon -prehm -hard -n[1:50] -enemy 
 Demon Eye -prehm -easy -n[1:50] -enemy 
 Devourer  -prehm -medium -cor -n[1:50] -enemy 
-Doctor Bones -prehm -hard -rare -n[1:2] -enemy 
-Doctor Bones -prehm -hard -insane -n[3:5] -enemy 
+Doctor Bones -prehm -hard -rare -n[1:5] -enemy 
 Dungeon Guardian -prehm -insane -n[1:1] -enemy 
 Dungeon Slime -prehm -medium -rare -n[1:5] -enemy 
 Eater of Souls -prehm -easy -cor -n[1:50] -enemy 
