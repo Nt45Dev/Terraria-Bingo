@@ -758,95 +758,120 @@ namespace Randomizer_Bingo
                 {
                     possibletasks.ImportRow(prehmtask);
                 }
-                sbseed.Clear();
+                
+                if (blackoutchk.Checked)
+                {
+                    blackout = true;
+                    bingosreq = 12;
 
+                }
+                else
+                {
+                    bingosreq = bingoamt.Value;
+
+                }
+                sbseed.Clear();
+                sbseed.Append("B[" + bingosreq.ToString() + "] -");
 
                 comp.Clear();
-                generatecard();
-                B1string = sbmin.ToString();
-                
-                generatecard();
-                B2string = sbmin.ToString();
-                
-                generatecard();
-                B3string = sbmin.ToString();
-                
-                generatecard();
-                B4string = sbmin.ToString();
-                
-                generatecard();
-                B5string = sbmin.ToString();
-                
-                generatecard();
-                I1string = sbmin.ToString();
-                
-                generatecard();
-                I2string = sbmin.ToString();
-                
-                generatecard();
-                I3string = sbmin.ToString();
-                
-                generatecard();
-                I4string = sbmin.ToString();
-                
-                generatecard();
-                I5string = sbmin.ToString();
-                
-                generatecard();
-                N1string = sbmin.ToString();
-                
-                generatecard();
-                N2string = sbmin.ToString();
-                
-                generatecard();
-                N3string = sbmin.ToString();
-                
-                generatecard();
-                N4string = sbmin.ToString();
-                
-                generatecard();
-                N5string = sbmin.ToString();
-                
-                generatecard();
-                G1string = sbmin.ToString();
-                
-                generatecard();
-                G2string = sbmin.ToString();
-                 
-                generatecard();
-                G3string = sbmin.ToString();
-                 
-                generatecard();
-                G4string = sbmin.ToString();
-                 
-                generatecard();
-                G5string = sbmin.ToString();
-                 
-                generatecard();
-                O1string = sbmin.ToString();
-                 
-                generatecard();
-                O2string = sbmin.ToString();
-                 
-                generatecard();
-                O3string = sbmin.ToString();
-                 
-                generatecard();
-                O4string = sbmin.ToString();
-                 
-                generatecard();
-                O5string = sbmin.ToString();
 
-                selectedtable.Rows.Clear();
+                if (seedtxtbx.Text == "")
+                {
 
+
+                    generatecard();
+                    B1string = sbmin.ToString();
+
+                    generatecard();
+                    B2string = sbmin.ToString();
+
+                    generatecard();
+                    B3string = sbmin.ToString();
+
+                    generatecard();
+                    B4string = sbmin.ToString();
+
+                    generatecard();
+                    B5string = sbmin.ToString();
+
+                    generatecard();
+                    I1string = sbmin.ToString();
+
+                    generatecard();
+                    I2string = sbmin.ToString();
+
+                    generatecard();
+                    I3string = sbmin.ToString();
+
+                    generatecard();
+                    I4string = sbmin.ToString();
+
+                    generatecard();
+                    I5string = sbmin.ToString();
+
+                    generatecard();
+                    N1string = sbmin.ToString();
+
+                    generatecard();
+                    N2string = sbmin.ToString();
+
+                    generatecard();
+                    N3string = sbmin.ToString();
+
+                    generatecard();
+                    N4string = sbmin.ToString();
+
+                    generatecard();
+                    N5string = sbmin.ToString();
+
+                    generatecard();
+                    G1string = sbmin.ToString();
+
+                    generatecard();
+                    G2string = sbmin.ToString();
+
+                    generatecard();
+                    G3string = sbmin.ToString();
+
+                    generatecard();
+                    G4string = sbmin.ToString();
+
+                    generatecard();
+                    G5string = sbmin.ToString();
+
+                    generatecard();
+                    O1string = sbmin.ToString();
+
+                    generatecard();
+                    O2string = sbmin.ToString();
+
+                    generatecard();
+                    O3string = sbmin.ToString();
+
+                    generatecard();
+                    O4string = sbmin.ToString();
+
+                    generatecard();
+                    O5string = sbmin.ToString();
+
+                    selectedtable.Rows.Clear();
+                }
+                else
+                {
+
+                    generatefromseed(seedtxtbx.Text);
+                }
                 if (freespacechk.Checked)
                 {
                     freespace = true;
                     N3string = "Free Space";
                 }
-                sbseed.Insert(0, "-");
+
+                if (sbseed[0].ToString() != "-")
+                {
+                    sbseed.Insert(0, "-");
+                }
                 sbseed.Remove(sbseed.Length - 1, 1);
-                seedtxtbx.Text = sbseed.ToString();
                 seed = sbseed.ToString();
                 if (seedonlychk.Checked)
                 {
@@ -1373,6 +1398,48 @@ namespace Randomizer_Bingo
             }
             updateworldimg();
           
+        }
+
+        public void generatefromseed(string seed)
+        {
+            string[] currenttasks;
+            string[] currentamounts;
+            sbseed.Clear();
+
+            seed.Replace("-B[", "");
+            while (seed[0].ToString() != "]")
+            {
+                if (seed[0].ToString() != "-")
+                {
+                    sbseed.Append(seed[0]);
+                }
+                seed.Remove(0, 1);
+            }
+
+
+            bingosreq = int.Parse(sbseed.ToString());
+
+            sbseed.Clear();
+
+            while (seed[0].ToString() != "-")
+            {
+                if (seed[0].ToString() != "-")
+                {
+                    sbseed.Append(seed[0]);
+                }
+                seed.Remove(0, 1);
+            }
+
+
+
+            for (int i = 0; i < seed.Length; i++)
+            {
+                sbseed.Append(seed[i]);
+            }
+            //foreach (DataRow dr in possibletasks.Select($"TaskID = {currenttasks[1]}"))
+            //{
+
+            //}
         }
     }
 }
