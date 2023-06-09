@@ -8,7 +8,7 @@ Welcome to Terraria Bingo! The rules are fairly simple and the card is customiza
 Objectives are generated in a table and your settings will determine what is pulled
 from the table at what frequency. The table will be referred to as the pool.
 
-Start by deciding which world evil you want, and if you will be playing in multiplayer.
+Start by deciding which world evil you want (or generate the card with the evil selected during world gen), and if you will be playing in multiplayer.
 The world evil will make sure you do not have any biome-exlusive enemies/bosses/items
 which you can not (easily) get in a normal playthrough.
 
