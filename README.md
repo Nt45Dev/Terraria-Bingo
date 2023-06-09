@@ -1,3 +1,7 @@
+To download and run:
+Download the Terraria Bingo.7z file and unzip it anywhere you want (Program files, desktop, etc.)
+Open Terraria Bingo\bin\Release\net6.0-windows/Randomizer Bingo.exe
+
 Welcome to Terraria Bingo! The rules are fairly simple and the card is customizable.
 Objectives are generated in a table and your settings will determine what is pulled
 from the table at what frequency. The table will be referred to as the pool.
