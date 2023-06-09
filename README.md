@@ -23,6 +23,7 @@ available in the pool. If you want to only play certain classes, check the class
 want to have enabled.
 
 
+
 Plans:
 * Seeds (either a string for each item with an amount, or just a seed for RNG)
 * Finish adding new accessories/items
