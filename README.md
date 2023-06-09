@@ -24,7 +24,8 @@ want to have enabled.
 
 
 
-Plans:
+<h1>Future Plans:</h1>
+
 * Seeds (either a string for each item with an amount, or just a seed for RNG)
 * Finish adding new accessories/items
 * Adding flair to everything
