@@ -1,6 +1,7 @@
 To download and run:
 Download the Terraria Bingo.7z file and unzip it anywhere you want (Program files, desktop, etc.)
 Open Terraria Bingo\bin\Release\net6.0-windows/Randomizer Bingo.exe
+Requires .NET 6.0.16+ (can be downlaoded at https://download.visualstudio.microsoft.com/download/pr/85473c45-8d91-48cb-ab41-86ec7abc1000/83cd0c82f0cde9a566bae4245ea5a65b/windowsdesktop-runtime-6.0.16-win-x64.exe)
 
 Welcome to Terraria Bingo! The rules are fairly simple and the card is customizable.
 Objectives are generated in a table and your settings will determine what is pulled
