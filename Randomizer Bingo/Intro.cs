@@ -117,6 +117,7 @@ namespace Randomizer_Bingo
                 taskdata.Columns.Add("Passive");
                 taskdata.Columns.Add("Fail");
                 taskdata.Columns.Add("Team");
+               
             }
             if (taskdata.Rows.Count == 0)
             {
@@ -1287,10 +1288,14 @@ namespace Randomizer_Bingo
 
         private void Intro_Load(object sender, EventArgs e)
         {
+            seedlbl.Visible = false;
+            seedtxtbx.Visible = false;
+            clipbtn.Visible = false;
+            seedonlychk.Visible = false;
             ToolTip tt = new ToolTip();
             tt.AutomaticDelay = 500;
             tt.ReshowDelay = 500;
-            tt.SetToolTip(this.pictureBox1, "Paste from clipboard");
+            tt.SetToolTip(this.clipbtn, "Paste from clipboard");
             tt.SetToolTip(this.prehardmodechk, "Check to include tasks from Pre-Hardmode.");
             tt.SetToolTip(this.hardmodechk, "Check to include tasks from Hardmode.");
             tt.SetToolTip(this.crimsonchk, "Select this if you are playing on a Crimson world.");
@@ -1313,7 +1318,7 @@ namespace Randomizer_Bingo
 
 
 
-            pictureBox1.Image = Image.FromFile(@"../../../Resources/Clipboard.png");
+            clipbtn.Image = Image.FromFile(@"../../../Resources/Clipboard.png");
             difficultypb.SizeMode = PictureBoxSizeMode.StretchImage;
             worldpb.SizeMode = PictureBoxSizeMode.StretchImage;
             expertpb.SizeMode = PictureBoxSizeMode.StretchImage;
