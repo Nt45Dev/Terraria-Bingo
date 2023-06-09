@@ -21,3 +21,10 @@ hard pre-hardmode tasks.
 For the class selection, leave all boxes blank to have all class items and challenges 
 available in the pool. If you want to only play certain classes, check the classes you 
 want to have enabled.
+
+
+Plans:
+* Seeds (either a string for each item with an amount, or just a seed for RNG)
+* Finish adding new accessories/items
+* Adding flair to everything
+* General improvements to card generation
