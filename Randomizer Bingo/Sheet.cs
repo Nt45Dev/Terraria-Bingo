@@ -37,7 +37,9 @@ namespace Randomizer_Bingo
         
         private void Sheet_Load(object sender, EventArgs e)
         {
-            pictureBox1.Image = Image.FromFile(@"../../../Resources/Clipboard.png");
+            copyseedlbl.Visible = false;
+            sheetclipbtn.Visible = false;
+            sheetclipbtn.Image = Image.FromFile(@"../../../Resources/Clipboard.png");
 
 
 
@@ -401,7 +403,7 @@ namespace Randomizer_Bingo
             if (bingoscount >= bingosamtcheck)
                 if (bingosamtcheck == 1)
                 {
-                    MessageBox.Show($"BINGO!");
+                    MessageBox.Show($"BINGO! Objectives complete!");
                 }
 
                 else {
