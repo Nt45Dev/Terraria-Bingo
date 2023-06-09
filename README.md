@@ -30,3 +30,5 @@ want to have enabled.
 * Finish adding new accessories/items
 * Adding flair to everything
 * General improvements to card generation
+
+Please let me know if you run into any issues or have suggestions!
