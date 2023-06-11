@@ -23,10 +23,10 @@ available in the pool. If you want to only play certain classes, check the class
 want to have enabled.
 
 <h1>To add/remove objectives:</h1>
-Modify the individual text files in the Resources folder.
+Modify the individual text files in the Resources folder (minus fulltasks.txt as this file gets dynamically generated based on the other files. In the future this will be the only file that determines objectives).
 
 
-Triggers explanations
+Triggers explanations:
 * -n[min:max] (Optional. Number required to complete objectives. Used for items and enemies. If not included, defaults to 1)
 * -item (Any item should have this trigger)
 * -prehm (Required if -hm is not specified. Item is obtainable in pre-hardmode before Wall of Flesh)
