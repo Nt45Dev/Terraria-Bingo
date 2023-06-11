@@ -22,6 +22,34 @@ For the class selection, leave all boxes blank to have all class items and chall
 available in the pool. If you want to only play certain classes, check the classes you 
 want to have enabled.
 
+<h1>To add/remove objectives:</h1>
+Modify the individual text files in the Resources folder.
+
+
+Triggers explanations
+* -n[min:max] (Optional. Number required to complete objectives. Used for items and enemies. If not included, defaults to 1)
+* -item (Any item should have this trigger)
+* -prehm (Required if -hm is not specified. Item is obtainable in pre-hardmode before Wall of Flesh)
+* -hm (Required if -prehm is not specified. Item is obtainable in hardmode after defeating the Wall of Flesh)
+* -armor (Armor sets)
+* -enemy (All enemies, excluding bosses)
+* -rare (Rarely spawning enemies,
+* -boss (If enemy is a boss)
+* -npc (If obtaining an NPC)
+* -event (Events such as blood moons, martian madness, etc.)
+* -easy (Difficulty. One difficuly is required to be specified)
+* -medium (Difficulty. One difficuly is required to be specified)
+* -hard (Difficulty. One difficuly is required to be specified)
+* -insane (Difficulty. One difficuly is required to be specified)
+* -crim (Crimson specific item)
+* -cor (Corruption specific item)
+* -melee (Item deals melee damage or benefits specifically this class)
+* -ranged (Item deals ranged damage or benefits specifically this class)
+* -mage (Item deals mage damage or benefits specifically this class)
+* -summoner (Item deals summoner damage or benefits specifically this class)
+* -passive (Unused)
+* -fail (Objective can be failed, rendering the square on the card unclearable. Not implemented yet, will not show up on blackout.)
+* -team (Not implemented, for items that benefit teams or only appear when on a multiplayer team)
 
 
 <h1>Future Plans:</h1>
