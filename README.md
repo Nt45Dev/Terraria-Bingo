@@ -9,7 +9,7 @@ Objectives are generated in a table and your settings will determine what is pul
 from the table at what frequency. The table will be referred to as the pool.
 
 Start by deciding which world evil you want (or generate the card with the evil selected during world gen), and if you will be playing in multiplayer.
-The world evil will make sure you do not have any biome-exlusive enemies/bosses/items
+The world evil will make sure you do not have any biome-exclusive enemies/bosses/items
 which you can not (easily) get in a normal playthrough.
 
 For progression, check either pre-hardmode, hardmode, or both. This will determine
