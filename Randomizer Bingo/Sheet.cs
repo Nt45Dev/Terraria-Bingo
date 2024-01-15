@@ -1,4 +1,4 @@
-﻿using System.Drawing;
+using System.Drawing;
 namespace Randomizer_Bingo
 {
     public partial class Sheet : Form
@@ -41,7 +41,8 @@ namespace Randomizer_Bingo
             sheetclipbtn.Visible = true;
             sheetclipbtn.Image = Image.FromFile(@"../../../Resources/Clipboard.png");
 
-            seedtxtbx.Text = Intro.seed.ToString();
+            string seedtext = Intro.seed.ToString();
+            seedtxtbx.Text = seedtext;
 
             B1.Text = Intro.B1string;
             B2.Text = Intro.B2string;
