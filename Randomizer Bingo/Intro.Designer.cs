@@ -106,12 +106,12 @@
             // seedlbl
             // 
             this.seedlbl.AutoSize = true;
-            this.seedlbl.Location = new System.Drawing.Point(221, 16);
+            this.seedlbl.Location = new System.Drawing.Point(191, 16);
             this.seedlbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.seedlbl.Name = "seedlbl";
-            this.seedlbl.Size = new System.Drawing.Size(168, 15);
+            this.seedlbl.Size = new System.Drawing.Size(207, 15);
             this.seedlbl.TabIndex = 3;
-            this.seedlbl.Text = "Seed (leave blank for random):";
+            this.seedlbl.Text = "Seed (numbers only, blank = random)";
             // 
             // filledcolorbtn
             // 
@@ -313,7 +313,7 @@
             this.clipbtn.Location = new System.Drawing.Point(362, 33);
             this.clipbtn.Margin = new System.Windows.Forms.Padding(2);
             this.clipbtn.Name = "clipbtn";
-            this.clipbtn.Size = new System.Drawing.Size(22, 19);
+            this.clipbtn.Size = new System.Drawing.Size(36, 36);
             this.clipbtn.TabIndex = 22;
             this.clipbtn.TabStop = false;
             this.clipbtn.Click += new System.EventHandler(this.pictureBox1_Click);

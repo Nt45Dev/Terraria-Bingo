@@ -67,6 +67,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.sheetclipbtn = new System.Windows.Forms.PictureBox();
             this.copyseedlbl = new System.Windows.Forms.Label();
+            this.seedtxtbx = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.sheetclipbtn)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,7 +76,7 @@
             this.B1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.B1.BackColor = System.Drawing.SystemColors.Control;
             this.B1.Location = new System.Drawing.Point(22, 19);
-            this.B1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.B1.Margin = new System.Windows.Forms.Padding(2);
             this.B1.Name = "B1";
             this.B1.Size = new System.Drawing.Size(175, 150);
             this.B1.TabIndex = 0;
@@ -86,7 +87,7 @@
             // I1
             // 
             this.I1.Location = new System.Drawing.Point(196, 19);
-            this.I1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.I1.Margin = new System.Windows.Forms.Padding(2);
             this.I1.Name = "I1";
             this.I1.Size = new System.Drawing.Size(175, 150);
             this.I1.TabIndex = 1;
@@ -97,7 +98,7 @@
             // N1
             // 
             this.N1.Location = new System.Drawing.Point(370, 19);
-            this.N1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.N1.Margin = new System.Windows.Forms.Padding(2);
             this.N1.Name = "N1";
             this.N1.Size = new System.Drawing.Size(175, 150);
             this.N1.TabIndex = 2;
@@ -108,7 +109,7 @@
             // G1
             // 
             this.G1.Location = new System.Drawing.Point(543, 19);
-            this.G1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.G1.Margin = new System.Windows.Forms.Padding(2);
             this.G1.Name = "G1";
             this.G1.Size = new System.Drawing.Size(175, 150);
             this.G1.TabIndex = 3;
@@ -119,7 +120,7 @@
             // O1
             // 
             this.O1.Location = new System.Drawing.Point(717, 19);
-            this.O1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.O1.Margin = new System.Windows.Forms.Padding(2);
             this.O1.Name = "O1";
             this.O1.Size = new System.Drawing.Size(175, 150);
             this.O1.TabIndex = 4;
@@ -130,7 +131,7 @@
             // O2
             // 
             this.O2.Location = new System.Drawing.Point(717, 168);
-            this.O2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.O2.Margin = new System.Windows.Forms.Padding(2);
             this.O2.Name = "O2";
             this.O2.Size = new System.Drawing.Size(175, 150);
             this.O2.TabIndex = 9;
@@ -141,7 +142,7 @@
             // G2
             // 
             this.G2.Location = new System.Drawing.Point(543, 168);
-            this.G2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.G2.Margin = new System.Windows.Forms.Padding(2);
             this.G2.Name = "G2";
             this.G2.Size = new System.Drawing.Size(175, 150);
             this.G2.TabIndex = 8;
@@ -152,7 +153,7 @@
             // N2
             // 
             this.N2.Location = new System.Drawing.Point(370, 168);
-            this.N2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.N2.Margin = new System.Windows.Forms.Padding(2);
             this.N2.Name = "N2";
             this.N2.Size = new System.Drawing.Size(175, 150);
             this.N2.TabIndex = 7;
@@ -163,7 +164,7 @@
             // I2
             // 
             this.I2.Location = new System.Drawing.Point(196, 168);
-            this.I2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.I2.Margin = new System.Windows.Forms.Padding(2);
             this.I2.Name = "I2";
             this.I2.Size = new System.Drawing.Size(175, 150);
             this.I2.TabIndex = 6;
@@ -174,7 +175,7 @@
             // B2
             // 
             this.B2.Location = new System.Drawing.Point(22, 168);
-            this.B2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.B2.Margin = new System.Windows.Forms.Padding(2);
             this.B2.Name = "B2";
             this.B2.Size = new System.Drawing.Size(175, 150);
             this.B2.TabIndex = 5;
@@ -185,7 +186,7 @@
             // O3
             // 
             this.O3.Location = new System.Drawing.Point(717, 317);
-            this.O3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.O3.Margin = new System.Windows.Forms.Padding(2);
             this.O3.Name = "O3";
             this.O3.Size = new System.Drawing.Size(175, 150);
             this.O3.TabIndex = 14;
@@ -196,7 +197,7 @@
             // G3
             // 
             this.G3.Location = new System.Drawing.Point(543, 317);
-            this.G3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.G3.Margin = new System.Windows.Forms.Padding(2);
             this.G3.Name = "G3";
             this.G3.Size = new System.Drawing.Size(175, 150);
             this.G3.TabIndex = 13;
@@ -207,7 +208,7 @@
             // N3
             // 
             this.N3.Location = new System.Drawing.Point(370, 317);
-            this.N3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.N3.Margin = new System.Windows.Forms.Padding(2);
             this.N3.Name = "N3";
             this.N3.Size = new System.Drawing.Size(175, 150);
             this.N3.TabIndex = 12;
@@ -218,7 +219,7 @@
             // I3
             // 
             this.I3.Location = new System.Drawing.Point(196, 317);
-            this.I3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.I3.Margin = new System.Windows.Forms.Padding(2);
             this.I3.Name = "I3";
             this.I3.Size = new System.Drawing.Size(175, 150);
             this.I3.TabIndex = 11;
@@ -229,7 +230,7 @@
             // B3
             // 
             this.B3.Location = new System.Drawing.Point(22, 317);
-            this.B3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.B3.Margin = new System.Windows.Forms.Padding(2);
             this.B3.Name = "B3";
             this.B3.Size = new System.Drawing.Size(175, 150);
             this.B3.TabIndex = 10;
@@ -240,7 +241,7 @@
             // O4
             // 
             this.O4.Location = new System.Drawing.Point(717, 466);
-            this.O4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.O4.Margin = new System.Windows.Forms.Padding(2);
             this.O4.Name = "O4";
             this.O4.Size = new System.Drawing.Size(175, 150);
             this.O4.TabIndex = 19;
@@ -251,7 +252,7 @@
             // G4
             // 
             this.G4.Location = new System.Drawing.Point(543, 466);
-            this.G4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.G4.Margin = new System.Windows.Forms.Padding(2);
             this.G4.Name = "G4";
             this.G4.Size = new System.Drawing.Size(175, 150);
             this.G4.TabIndex = 18;
@@ -262,7 +263,7 @@
             // N4
             // 
             this.N4.Location = new System.Drawing.Point(370, 466);
-            this.N4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.N4.Margin = new System.Windows.Forms.Padding(2);
             this.N4.Name = "N4";
             this.N4.Size = new System.Drawing.Size(175, 150);
             this.N4.TabIndex = 17;
@@ -273,7 +274,7 @@
             // I4
             // 
             this.I4.Location = new System.Drawing.Point(196, 466);
-            this.I4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.I4.Margin = new System.Windows.Forms.Padding(2);
             this.I4.Name = "I4";
             this.I4.Size = new System.Drawing.Size(175, 150);
             this.I4.TabIndex = 16;
@@ -284,7 +285,7 @@
             // B4
             // 
             this.B4.Location = new System.Drawing.Point(22, 466);
-            this.B4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.B4.Margin = new System.Windows.Forms.Padding(2);
             this.B4.Name = "B4";
             this.B4.Size = new System.Drawing.Size(175, 150);
             this.B4.TabIndex = 15;
@@ -295,7 +296,7 @@
             // O5
             // 
             this.O5.Location = new System.Drawing.Point(717, 614);
-            this.O5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.O5.Margin = new System.Windows.Forms.Padding(2);
             this.O5.Name = "O5";
             this.O5.Size = new System.Drawing.Size(175, 150);
             this.O5.TabIndex = 24;
@@ -306,7 +307,7 @@
             // G5
             // 
             this.G5.Location = new System.Drawing.Point(543, 614);
-            this.G5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.G5.Margin = new System.Windows.Forms.Padding(2);
             this.G5.Name = "G5";
             this.G5.Size = new System.Drawing.Size(175, 150);
             this.G5.TabIndex = 23;
@@ -317,7 +318,7 @@
             // N5
             // 
             this.N5.Location = new System.Drawing.Point(370, 614);
-            this.N5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.N5.Margin = new System.Windows.Forms.Padding(2);
             this.N5.Name = "N5";
             this.N5.Size = new System.Drawing.Size(175, 150);
             this.N5.TabIndex = 22;
@@ -328,7 +329,7 @@
             // I5
             // 
             this.I5.Location = new System.Drawing.Point(196, 614);
-            this.I5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.I5.Margin = new System.Windows.Forms.Padding(2);
             this.I5.Name = "I5";
             this.I5.Size = new System.Drawing.Size(175, 150);
             this.I5.TabIndex = 21;
@@ -339,7 +340,7 @@
             // B5
             // 
             this.B5.Location = new System.Drawing.Point(22, 614);
-            this.B5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.B5.Margin = new System.Windows.Forms.Padding(2);
             this.B5.Name = "B5";
             this.B5.Size = new System.Drawing.Size(175, 150);
             this.B5.TabIndex = 20;
@@ -351,7 +352,7 @@
             // 
             this.button1.Enabled = false;
             this.button1.Location = new System.Drawing.Point(22, 0);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(175, 20);
             this.button1.TabIndex = 25;
@@ -363,7 +364,7 @@
             // 
             this.button2.Enabled = false;
             this.button2.Location = new System.Drawing.Point(196, 0);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(175, 20);
             this.button2.TabIndex = 26;
@@ -375,7 +376,7 @@
             // 
             this.button3.Enabled = false;
             this.button3.Location = new System.Drawing.Point(370, 0);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(175, 20);
             this.button3.TabIndex = 27;
@@ -387,7 +388,7 @@
             // 
             this.button4.Enabled = false;
             this.button4.Location = new System.Drawing.Point(543, 0);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(175, 20);
             this.button4.TabIndex = 28;
@@ -399,7 +400,7 @@
             // 
             this.button5.Enabled = false;
             this.button5.Location = new System.Drawing.Point(717, 0);
-            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(175, 20);
             this.button5.TabIndex = 29;
@@ -411,7 +412,7 @@
             // 
             this.button6.Enabled = false;
             this.button6.Location = new System.Drawing.Point(0, 19);
-            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(24, 150);
             this.button6.TabIndex = 30;
@@ -423,7 +424,7 @@
             // 
             this.button7.Enabled = false;
             this.button7.Location = new System.Drawing.Point(0, 168);
-            this.button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(24, 150);
             this.button7.TabIndex = 31;
@@ -435,7 +436,7 @@
             // 
             this.button8.Enabled = false;
             this.button8.Location = new System.Drawing.Point(0, 317);
-            this.button8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button8.Margin = new System.Windows.Forms.Padding(2);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(24, 150);
             this.button8.TabIndex = 32;
@@ -447,7 +448,7 @@
             // 
             this.button9.Enabled = false;
             this.button9.Location = new System.Drawing.Point(0, 466);
-            this.button9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button9.Margin = new System.Windows.Forms.Padding(2);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(24, 150);
             this.button9.TabIndex = 33;
@@ -459,7 +460,7 @@
             // 
             this.button10.Enabled = false;
             this.button10.Location = new System.Drawing.Point(0, 614);
-            this.button10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button10.Margin = new System.Windows.Forms.Padding(2);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(24, 150);
             this.button10.TabIndex = 34;
@@ -489,29 +490,37 @@
             // 
             // sheetclipbtn
             // 
-            this.sheetclipbtn.Location = new System.Drawing.Point(852, 768);
-            this.sheetclipbtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sheetclipbtn.Location = new System.Drawing.Point(856, 771);
+            this.sheetclipbtn.Margin = new System.Windows.Forms.Padding(2);
             this.sheetclipbtn.Name = "sheetclipbtn";
-            this.sheetclipbtn.Size = new System.Drawing.Size(22, 19);
+            this.sheetclipbtn.Size = new System.Drawing.Size(36, 36);
             this.sheetclipbtn.TabIndex = 37;
             this.sheetclipbtn.TabStop = false;
-            this.sheetclipbtn.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.sheetclipbtn.Click += new System.EventHandler(this.sheetclipbtn_Click);
             // 
             // copyseedlbl
             // 
             this.copyseedlbl.AutoSize = true;
-            this.copyseedlbl.Location = new System.Drawing.Point(780, 770);
+            this.copyseedlbl.Location = new System.Drawing.Point(766, 766);
             this.copyseedlbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.copyseedlbl.Name = "copyseedlbl";
             this.copyseedlbl.Size = new System.Drawing.Size(63, 15);
             this.copyseedlbl.TabIndex = 38;
             this.copyseedlbl.Text = "Copy Seed";
             // 
+            // seedtxtbx
+            // 
+            this.seedtxtbx.Location = new System.Drawing.Point(747, 784);
+            this.seedtxtbx.Name = "seedtxtbx";
+            this.seedtxtbx.Size = new System.Drawing.Size(100, 23);
+            this.seedtxtbx.TabIndex = 39;
+            // 
             // Sheet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(895, 806);
+            this.ClientSize = new System.Drawing.Size(895, 815);
+            this.Controls.Add(this.seedtxtbx);
             this.Controls.Add(this.copyseedlbl);
             this.Controls.Add(this.sheetclipbtn);
             this.Controls.Add(this.label1);
@@ -552,7 +561,7 @@
             this.Controls.Add(this.I1);
             this.Controls.Add(this.B1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Sheet";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bingo Card";
@@ -604,5 +613,6 @@
         private Label label1;
         private PictureBox sheetclipbtn;
         private Label copyseedlbl;
+        private TextBox seedtxtbx;
     }
 }

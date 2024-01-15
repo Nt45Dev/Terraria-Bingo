@@ -73,7 +73,6 @@ namespace Randomizer_Bingo
         public string taskmin = new string("");
         public string taskmax = new string("");
         public string selectstring;
-        public static StringBuilder sbseed = new StringBuilder();
         public StringBuilder sbmin = new StringBuilder();
         public StringBuilder sbmax = new StringBuilder();
         public StringBuilder objpicker = new StringBuilder();
@@ -86,7 +85,7 @@ namespace Randomizer_Bingo
         public int randrowint;
 
 
-        
+
 
         public void tasktable()
         {
@@ -117,11 +116,11 @@ namespace Randomizer_Bingo
                 taskdata.Columns.Add("Passive");
                 taskdata.Columns.Add("Fail");
                 taskdata.Columns.Add("Team");
-               
+
             }
             if (taskdata.Rows.Count == 0)
             {
-                
+
                 foreach (string objective in File.ReadLines(@"../../../Resources/objectivelist.txt"))
                 {
                     id++;
@@ -150,8 +149,8 @@ namespace Randomizer_Bingo
                     bool Team = false;
                     if (newobj.Length > 0)
 
-                        {
-                        
+                    {
+
                         if (newobj.Contains("-item"))
                         {
                             Item = true;
@@ -264,12 +263,11 @@ namespace Randomizer_Bingo
                         }
                         newobj = newobj.TrimEnd();
 
-                        
+
 
                         taskdata.Rows.Add(id, newobj, Convert.ToInt32(Item), Convert.ToInt32(Prehardmode), Convert.ToInt32(Hardmode), Convert.ToInt32(Armor), Convert.ToInt32(Enemy), Convert.ToInt32(Rare), Convert.ToInt32(Boss), Convert.ToInt32(NPC), Convert.ToInt32(Event),
                             Convert.ToInt32(Easy), Convert.ToInt32(Medium), Convert.ToInt32(Hard), Convert.ToInt32(Insane), Convert.ToInt32(Crimson), Convert.ToInt32(Corruption), Convert.ToInt32(Melee), Convert.ToInt32(Ranged), Convert.ToInt32(Mage),
                             Convert.ToInt32(Summoner), Convert.ToInt32(Passive), Convert.ToInt32(Fail), Convert.ToInt32(Team));
-                        //seed = seed + $"{id}-";
                     }
                     else
                     {
@@ -283,7 +281,7 @@ namespace Randomizer_Bingo
         }
         private void filledcolorbtn_Click(object sender, EventArgs e)
         {
-           
+
             if (colorDialog1.ShowDialog() == DialogResult.OK)
             {
                 filledcolor = colorDialog1.Color;
@@ -295,7 +293,7 @@ namespace Randomizer_Bingo
 
         private void unfilledcolorbtn_Click(object sender, EventArgs e)
         {
-            
+
             if (colorDialog1.ShowDialog() == DialogResult.OK)
             {
                 unfilledcolor = colorDialog1.Color;
@@ -309,7 +307,7 @@ namespace Randomizer_Bingo
         {
             if (colorDialog1.ShowDialog() == DialogResult.OK)
             {
-                
+
                 filledtextcolor = colorDialog1.Color;
                 checkedtxtcolorbtn.Text = "Sample";
                 checkedtxtcolorbtn.ForeColor = filledtextcolor;
@@ -318,7 +316,7 @@ namespace Randomizer_Bingo
 
         private void uncheckedtxtcolorbtn_Click(object sender, EventArgs e)
         {
-            
+
             if (colorDialog1.ShowDialog() == DialogResult.OK)
             {
                 unfilledtextcolor = colorDialog1.Color;
@@ -357,6 +355,22 @@ namespace Randomizer_Bingo
 
         private void finishintrobtn_Click(object sender, EventArgs e)
         {
+            if (seedtxtbx.Text != "")
+            {
+                
+                 if (int.TryParse(seedtxtbx.Text, out int seed)){
+                    random = new Random(seed);
+                    randomtemp = new Random(seed);
+                 }
+            }
+            else
+            {
+                 Random randomseed = new Random();
+                 seed = randomseed.Next().ToString();   
+                 random = new Random(int.Parse(seed));
+                 randomtemp = new Random(int.Parse(seed));
+            }
+
             if (!(bingochk.Checked | blackoutchk.Checked) | !(prehardmodechk.Checked | hardmodechk.Checked) | !(crimsonchk.Checked | corruptionchk.Checked))
             {
                 MessageBox.Show("Invalid settings. Please select a Bingo Type (Bingo or Blackout) and/or make sure one world evil or one both Pre-Hardmode and Hardmode are selected.");
@@ -474,8 +488,8 @@ namespace Randomizer_Bingo
                 foreach (string entry in File.ReadAllLines(@"../../../Resources/enemylist.txt"))
                 {
                     sbfile.AppendLine(entry);
-                    
-                    
+
+
                 }
                 sbfile.AppendLine();
                 foreach (string entry in File.ReadAllLines(@"../../../Resources/itemlist.txt"))
@@ -486,7 +500,7 @@ namespace Randomizer_Bingo
                 }
                 idtask = 0;
                 File.AppendAllText(@"../../../Resources/fulltasks.txt", sbfile.ToString());
-                    foreach (string task in File.ReadLines(@"../../../Resources/fulltasks.txt"))
+                foreach (string task in File.ReadLines(@"../../../Resources/fulltasks.txt"))
                 {
                     idtask++;
                     string newtask = task;
@@ -632,13 +646,13 @@ namespace Randomizer_Bingo
                         }
                         if (newtask.Contains("-n"))
                         {
-                            int startmin = newtask.IndexOf("[") +1;
-                            
-                            int endmin = newtask.IndexOf(":") -1;
-                            
-                            int startmax = newtask.IndexOf(":") +1;
-                            int endmax = newtask.IndexOf("]") -1;
-                            
+                            int startmin = newtask.IndexOf("[") + 1;
+
+                            int endmin = newtask.IndexOf(":") - 1;
+
+                            int startmax = newtask.IndexOf(":") + 1;
+                            int endmax = newtask.IndexOf("]") - 1;
+
                             char taskminchar;
                             char taskmaxchar;
 
@@ -646,35 +660,35 @@ namespace Randomizer_Bingo
                             sbmin.Clear();
                             for (int i = startmin; i <= endmin; i++)
                             {
-                            
+
                                 taskminchar = newtask[i];
                                 sbmin.Append(taskminchar);
                                 taskmin.Insert(0, taskminchar.ToString());
-                                
 
-                                
+
+
                             }
-                            
+
                             sbmax.Clear();
                             for (int i = startmax; i <= endmax; i++)
                             {
                                 taskmaxchar = newtask[i];
                                 sbmax.Append(taskmaxchar);
                                 taskmax.Insert(taskmin.Length, taskmaxchar.ToString());
-                              
+
                             }
 
-                            
+
                             taskrandnum = random.Next(int.Parse(sbmin.ToString()), int.Parse(sbmax.ToString()));
                             if (taskrandnum > 1)
                             {
                                 taskrandnum = (taskrandnum * difficultyslider.Value) + random.Next(0, difficultyslider.Value);
-                                
-                                
+
+
                             }
-                            
-                            
-                            for (int i = endmax; i != startmin -2; i--)
+
+
+                            for (int i = endmax; i != startmin - 2; i--)
                             {
                                 newtask = newtask.Remove(i);
                             }
@@ -695,32 +709,26 @@ namespace Randomizer_Bingo
                     }
                 }
 
-
-
-                    
-
-
-
-        //Generate card based on difficulty and options
+                //Generate card based on difficulty and options
                 possibletasks = entrydata.Clone();
                 possibletasks.Clear();
                 selectedtable = possibletasks.Clone();
                 selectedtable.Rows.Clear();
                 sbmin.Clear();
-                
+
 
 
                 if (prehardmodechk.Checked && !hardmodechk.Checked)
                 {
                     sbmin.Append("Prehardmode = 1");
-                    
+
                 }
 
                 //Hardmode Only
                 else if (hardmodechk.Checked && !prehardmodechk.Checked)
                 {
                     sbmin.Append("Hardmode = 1");
-                    
+
 
                 }
 
@@ -728,9 +736,9 @@ namespace Randomizer_Bingo
                 else if (prehardmodechk.Checked && hardmodechk.Checked)
                 {
                     sbmin.Append("(Prehardmode = 1 or Hardmode = 1)");
-                    
-                    
-                    
+
+
+
                 }
 
 
@@ -750,7 +758,7 @@ namespace Randomizer_Bingo
 
 
 
-                
+
 
 
                 selectstring = sbmin.ToString();
@@ -759,7 +767,7 @@ namespace Randomizer_Bingo
                 {
                     possibletasks.ImportRow(prehmtask);
                 }
-                
+
                 if (blackoutchk.Checked)
                 {
                     blackout = true;
@@ -771,109 +779,96 @@ namespace Randomizer_Bingo
                     bingosreq = bingoamt.Value;
 
                 }
-                sbseed.Clear();
-                sbseed.Append("B[" + bingosreq.ToString() + "] -");
+              
 
                 comp.Clear();
 
-                if (seedtxtbx.Text == "")
-                {
+
+                generatecard();
+                B1string = sbmin.ToString();
+
+                generatecard();
+                B2string = sbmin.ToString();
+
+                generatecard();
+                B3string = sbmin.ToString();
+
+                generatecard();
+                B4string = sbmin.ToString();
+
+                generatecard();
+                B5string = sbmin.ToString();
+
+                generatecard();
+                I1string = sbmin.ToString();
+
+                generatecard();
+                I2string = sbmin.ToString();
+
+                generatecard();
+                I3string = sbmin.ToString();
+
+                generatecard();
+                I4string = sbmin.ToString();
+
+                generatecard();
+                I5string = sbmin.ToString();
+
+                generatecard();
+                N1string = sbmin.ToString();
+
+                generatecard();
+                N2string = sbmin.ToString();
+
+                generatecard();
+                N3string = sbmin.ToString();
+
+                generatecard();
+                N4string = sbmin.ToString();
+
+                generatecard();
+                N5string = sbmin.ToString();
+
+                generatecard();
+                G1string = sbmin.ToString();
+
+                generatecard();
+                G2string = sbmin.ToString();
+
+                generatecard();
+                G3string = sbmin.ToString();
+
+                generatecard();
+                G4string = sbmin.ToString();
+
+                generatecard();
+                G5string = sbmin.ToString();
+
+                generatecard();
+                O1string = sbmin.ToString();
+
+                generatecard();
+                O2string = sbmin.ToString();
+
+                generatecard();
+                O3string = sbmin.ToString();
+
+                generatecard();
+                O4string = sbmin.ToString();
+
+                generatecard();
+                O5string = sbmin.ToString();
+
+                selectedtable.Rows.Clear();
 
 
-                    generatecard();
-                    B1string = sbmin.ToString();
-
-                    generatecard();
-                    B2string = sbmin.ToString();
-
-                    generatecard();
-                    B3string = sbmin.ToString();
-
-                    generatecard();
-                    B4string = sbmin.ToString();
-
-                    generatecard();
-                    B5string = sbmin.ToString();
-
-                    generatecard();
-                    I1string = sbmin.ToString();
-
-                    generatecard();
-                    I2string = sbmin.ToString();
-
-                    generatecard();
-                    I3string = sbmin.ToString();
-
-                    generatecard();
-                    I4string = sbmin.ToString();
-
-                    generatecard();
-                    I5string = sbmin.ToString();
-
-                    generatecard();
-                    N1string = sbmin.ToString();
-
-                    generatecard();
-                    N2string = sbmin.ToString();
-
-                    generatecard();
-                    N3string = sbmin.ToString();
-
-                    generatecard();
-                    N4string = sbmin.ToString();
-
-                    generatecard();
-                    N5string = sbmin.ToString();
-
-                    generatecard();
-                    G1string = sbmin.ToString();
-
-                    generatecard();
-                    G2string = sbmin.ToString();
-
-                    generatecard();
-                    G3string = sbmin.ToString();
-
-                    generatecard();
-                    G4string = sbmin.ToString();
-
-                    generatecard();
-                    G5string = sbmin.ToString();
-
-                    generatecard();
-                    O1string = sbmin.ToString();
-
-                    generatecard();
-                    O2string = sbmin.ToString();
-
-                    generatecard();
-                    O3string = sbmin.ToString();
-
-                    generatecard();
-                    O4string = sbmin.ToString();
-
-                    generatecard();
-                    O5string = sbmin.ToString();
-
-                    selectedtable.Rows.Clear();
-                }
-                else
-                {
-
-                    generatefromseed(seedtxtbx.Text);
-                }
                 if (freespacechk.Checked)
                 {
                     freespace = true;
                     N3string = "Free Space";
                 }
 
-                if (sbseed[0].ToString() != "-")
-                {
-                    sbseed.Insert(0, "-");
-                }
-                sbseed.Remove(sbseed.Length - 1, 1);
-                seed = sbseed.ToString();
+                
                 if (seedonlychk.Checked)
                 {
                     Clipboard.SetText(seed);
@@ -893,13 +888,13 @@ namespace Randomizer_Bingo
                         bingosreq = bingoamt.Value;
 
                     }
-                    
-                        Sheet card = new Sheet();
-                        card.Show();
-                        card.Focus();
-                    
-                   
-                    
+
+                    Sheet card = new Sheet();
+                    card.Show();
+                    card.Focus();
+
+
+
                 }
             }
         }
@@ -1007,11 +1002,12 @@ namespace Randomizer_Bingo
             sbmin.Clear();
             int r = randomtemp.Next(1, 4);
             objpicker.Clear();
-            
+
 
             if (r == 1)
             {
-                while (temptable.Rows.Count == 0) { 
+                while (temptable.Rows.Count == 0)
+                {
                     objpicker.Clear();
                     objpicker.Append("Enemy = 1");
                     difficultygen();
@@ -1048,60 +1044,60 @@ namespace Randomizer_Bingo
                             objpicker.Append(" or Summoner = 1");
                         }
                     }
-                else if (rangerchk.Checked)
-                {
-
-                    objpicker.Append(" and (Ranged = 1");
-                    if (magechk.Checked)
+                    else if (rangerchk.Checked)
                     {
-                        objpicker.Append(" or Mage = 1");
+
+                        objpicker.Append(" and (Ranged = 1");
+                        if (magechk.Checked)
+                        {
+                            objpicker.Append(" or Mage = 1");
+                        }
+                        if (summonerchk.Checked)
+                        {
+                            objpicker.Append(" or Summoner = 1");
+                        }
+
                     }
-                    if (summonerchk.Checked)
+                    else if (magechk.Checked)
                     {
-                        objpicker.Append(" or Summoner = 1");
-                    }
+                        objpicker.Append(" and (Mage = 1");
+                        if (summonerchk.Checked)
+                        {
+                            objpicker.Append(" or Summoner = 1");
+                        }
 
-                }
-                else if (magechk.Checked)
-                {
-                    objpicker.Append(" and (Mage = 1");
-                    if (summonerchk.Checked)
+
+                    }
+                    else if (summonerchk.Checked)
                     {
-                        objpicker.Append(" or Summoner = 1");
+                        objpicker.Append(" and (Summoner = 1");
+
+                    }
+                    else if (!meleechk.Checked && !rangerchk.Checked && !magechk.Checked && !summonerchk.Checked)
+                    {
+
+                        objpicker.Append(" and (Melee = 1 or Ranged = 1 or Mage = 1 or Summoner = 1)");
                     }
 
 
+                    if (objpicker[objpicker.Length - 1].ToString() != ")")
+                    {
+                        objpicker.Append(" )");
+                    }
+                    //Determine difficulty based on user input from slider
+                    difficultygen();
+
+                    if (comp.ToString() != "")
+                    {
+                        objpicker.Append($" and (TaskID not in ({comp.ToString()}))");
+                    }
+
+
+                    foreach (DataRow dr in possibletasks.Select(objpicker.ToString()))
+                    {
+                        temptable.ImportRow(dr);
+                    }
                 }
-                else if (summonerchk.Checked)
-                {
-                    objpicker.Append(" and (Summoner = 1");
-
-                }
-                else if (!meleechk.Checked && !rangerchk.Checked && !magechk.Checked && !summonerchk.Checked)
-                {
-
-                    objpicker.Append(" and (Melee = 1 or Ranged = 1 or Mage = 1 or Summoner = 1)");
-                }
-
-
-                if (objpicker[objpicker.Length - 1].ToString() != ")")
-                {
-                    objpicker.Append(" )");
-                }
-                //Determine difficulty based on user input from slider
-                difficultygen();
-
-                if (comp.ToString() != "")
-                {
-                    objpicker.Append($" and (TaskID not in ({comp.ToString()}))");
-                }
-
-
-                foreach (DataRow dr in possibletasks.Select(objpicker.ToString()))
-                {
-                    temptable.ImportRow(dr);
-                }
-            }
             }
             else if (r == 3)
             {
@@ -1145,9 +1141,9 @@ namespace Randomizer_Bingo
                 }
             }
 
-            
 
-             randrowint = random.Next(0, temptable.Rows.Count);
+
+            randrowint = random.Next(0, temptable.Rows.Count);
 
 
             comp.Append(temptable.Rows[randrowint]["TaskID"].ToString() + ",");
@@ -1166,10 +1162,10 @@ namespace Randomizer_Bingo
                 killcount = int.Parse(temptable.Rows[randrowint]["Num"].ToString());
                 if (killcount > 1)
                 {
- 
+
                     sbmin.Append($" x {killcount}");
                 }
-                
+
             }
             else if (temptable.Rows[randrowint]["Boss"] == "1")
             {
@@ -1182,8 +1178,8 @@ namespace Randomizer_Bingo
                     sbmin.Append($" x {killcount}");
                 }
             }
+
             
-            sbseed.Append(temptable.Rows[randrowint]["TaskID"].ToString() + "[" + temptable.Rows[randrowint]["Num"].ToString() + "] -");
         }
         private void dgvbtn_Click(object sender, EventArgs e)
         {
@@ -1197,10 +1193,10 @@ namespace Randomizer_Bingo
         {
             if (crimsonchk.Checked)
             {
-                
+
                 corruptionchk.Checked = false;
-                
-                
+
+
                 if (hardmodechk.Checked)
                 {
                     worldpb.Image = Image.FromFile(@"../../../Resources/HMCrimson.png");
@@ -1288,9 +1284,9 @@ namespace Randomizer_Bingo
 
         private void Intro_Load(object sender, EventArgs e)
         {
-            seedlbl.Visible = false;
-            seedtxtbx.Visible = false;
-            clipbtn.Visible = false;
+            seedlbl.Visible = true;
+            seedtxtbx.Visible = true;
+            clipbtn.Visible = true;
             seedonlychk.Visible = false;
             ToolTip tt = new ToolTip();
             tt.AutomaticDelay = 500;
@@ -1325,11 +1321,11 @@ namespace Randomizer_Bingo
             difficultypb.Image = Image.FromFile(@"../../../Resources/Calm.png");
             expertpb.Hide();
             expertpb.Image = Image.FromFile(@"../../../Resources/Expert_mode_icon.png");
-            
-            
+
+
             updateworldimg();
 
-            
+
         }
 
         public void updateworldimg()
@@ -1391,8 +1387,8 @@ namespace Randomizer_Bingo
             }
 
             updateworldimg();
-            
-           
+
+
         }
 
         private void hardmodechk_CheckedChanged(object sender, EventArgs e)
@@ -1402,49 +1398,7 @@ namespace Randomizer_Bingo
                 hardmodechk.Checked = true;
             }
             updateworldimg();
-          
-        }
 
-        public void generatefromseed(string seed)
-        {
-            string[] currenttasks;
-            string[] currentamounts;
-            sbseed.Clear();
-
-            seed.Replace("-B[", "");
-            while (seed[0].ToString() != "]")
-            {
-                if (seed[0].ToString() != "-")
-                {
-                    sbseed.Append(seed[0]);
-                }
-                seed.Remove(0, 1);
-            }
-
-
-            bingosreq = int.Parse(sbseed.ToString());
-
-            sbseed.Clear();
-
-            while (seed[0].ToString() != "-")
-            {
-                if (seed[0].ToString() != "-")
-                {
-                    sbseed.Append(seed[0]);
-                }
-                seed.Remove(0, 1);
-            }
-
-
-
-            for (int i = 0; i < seed.Length; i++)
-            {
-                sbseed.Append(seed[i]);
-            }
-            //foreach (DataRow dr in possibletasks.Select($"TaskID = {currenttasks[1]}"))
-            //{
-
-            //}
         }
     }
 }

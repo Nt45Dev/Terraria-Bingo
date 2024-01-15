@@ -37,11 +37,11 @@ namespace Randomizer_Bingo
         
         private void Sheet_Load(object sender, EventArgs e)
         {
-            copyseedlbl.Visible = false;
-            sheetclipbtn.Visible = false;
+            copyseedlbl.Visible = true;
+            sheetclipbtn.Visible = true;
             sheetclipbtn.Image = Image.FromFile(@"../../../Resources/Clipboard.png");
 
-
+            seedtxtbx.Text = Intro.seed.ToString();
 
             B1.Text = Intro.B1string;
             B2.Text = Intro.B2string;
@@ -817,9 +817,9 @@ namespace Randomizer_Bingo
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void sheetclipbtn_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(Intro.sbseed.ToString());
+            Clipboard.SetText(Intro.seed.ToString());
         }
     }
 }
