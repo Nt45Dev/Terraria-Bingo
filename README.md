@@ -1,4 +1,4 @@
-To download and run:
+<h1>To download and run:</h1>
 Download the Terraria-Bingo-New.7z file and unzip it anywhere you want (Program files, desktop, etc.)
 Open Randomizer Bingo\bin\Release\net6.0-windows/Randomizer Bingo.exe.
 
