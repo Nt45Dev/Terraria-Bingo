@@ -353,14 +353,15 @@ namespace Randomizer_Bingo
             }
         }
 
-        private void finishintrobtn_Click(object sender, EventArgs e)
+        public void finishintrobtn_Click(object sender, EventArgs e)
         {
             if (seedtxtbx.Text != "")
             {
-                
-                 if (int.TryParse(seedtxtbx.Text, out int seed)){
-                    random = new Random(seed);
-                    randomtemp = new Random(seed);
+                seed = seedtxtbx.Text;
+                 if (int.TryParse(seed, out int localseed)){
+                    localseed.ToString();
+                    random = new Random(localseed);
+                    randomtemp = new Random(localseed);
                  }
             }
             else
