@@ -22,6 +22,8 @@ For the class selection, leave all boxes blank to have all class items and chall
 available in the pool. If you want to only play certain classes, check the classes you 
 want to have enabled.
 
+Seeds will generate differently depending on the settings you have seelcted. Make sure you have the same settings to have identical cards.
+
 <h1>To add/remove objectives:</h1>
 Modify the individual text files in the Resources folder (minus fulltasks.txt as this file gets dynamically generated based on the other files. In the future this will be the only file that determines objectives).
 
