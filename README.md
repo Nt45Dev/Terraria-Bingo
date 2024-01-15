@@ -56,9 +56,13 @@ Triggers explanations:
 
 
 <h1>Future Plans:</h1>
-* Shimmerable items and graveyard crafting need accounted for.
+
+* Shimmerable items and graveyard crafting need accounted for
+
 * Finish adding new accessories/items
+  
 * Adding flair to everything
+  
 * General improvements to card generation
 
 Please let me know if you run into any issues or have suggestions!
