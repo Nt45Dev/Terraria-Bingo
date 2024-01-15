@@ -1,0 +1,4 @@
+Terraria-Bingo-New.7z
+F02D92B36D2DDAFE5BE5D100CFED7B55CD0535E85981E3F38524930A6C38C27F
+
+To check the hash, run powershell and enter Get-FileHash [drag file here or enter filepath]
