@@ -868,7 +868,10 @@ namespace Randomizer_Bingo
                     freespace = true;
                     N3string = "Free Space";
                 }
-
+                else
+                {
+                    freespace = false;
+                }
                 
                 if (seedonlychk.Checked)
                 {
