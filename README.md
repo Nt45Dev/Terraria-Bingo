@@ -65,4 +65,8 @@ Triggers explanations:
   
 * General improvements to card generation
 
+<h1>Open Source</h1>
+
+This project is open source and made with Visual Studio Code, feel free to modify it how you see fit. It is possible to include modded items by updating the respective text files and filling it out.
+
 Please let me know if you run into any issues or have suggestions!
